@@ -289,8 +289,7 @@
         "prodDoce"
         "prodTrece"
         "prodCatorce"
-        "videoEx"
-        ;
+        "videoEx";
     grid-template-columns: 100%;
     grid-template-rows: repeat(9, 300px);
 }
