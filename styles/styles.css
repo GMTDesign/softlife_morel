@@ -18,6 +18,7 @@
 }
 .informacion{
     grid-area: informacion;
+    
 }
 .pie{
     grid-area: pie;
@@ -57,20 +58,16 @@
 /* estilo de la página principal */
 .titulo{
     font-family: 'Merriweather', serif;
-    color:rgb(30, 15, 59);
+    color:rgb(56, 37, 95);
+    text-shadow: 2px 2px rgb(244, 246, 248);
     font-size: 16px;
-    padding: 80px;
+    margin-top: 02px;
+    padding: 50px;
     text-align: center;
-    /* coloqué este margen para cubrir la
-       altura promedio de los celulares*/
-    margin-bottom: 50px;
 }
 .descripcion{
     display:flex;
     flex-direction: row;
-    /* coloqué este margen para cubrir la
-       altura promedio de los celulares*/
-    margin-bottom: 150px;
 }
 .estiloDes{
     display:flex;
@@ -78,14 +75,47 @@
     justify-content: center;
     font-family: 'Quicksand', sans-serif;
     font-size: 12px;
-    color:rgb(88, 58, 153);
-    padding: 25px;  
+    color:rgb(56, 37, 95);
+    text-shadow: 2px 2px rgb(166, 191, 230);
+    padding: 15px;  
     gap: 25px;  
 }
 .imagen{
     max-width: 90%;    
     max-height: 90%;
-    padding: 25px;
+    padding: 15px;
+}
+.ofertas{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 14px;
+    color:rgb(29, 16, 54);
+    text-align: center;
+}
+.imgOfer{
+    margin-top: 10px;
+    width: 50%;
+    height: 50%;
+}
+.desOfer{
+    margin-left: 40px;
+    margin-bottom: 20px;
+    width: 300px;
+    text-align: center;
+    font-size: 10px;
+}
+.modoCompra{
+    display:flex;
+    flex-direction: row;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 10px;
+    color:rgb(29, 16, 54);
+    justify-content: center;
+    align-items: center;
+}
+.tamIco{
+    width: 30px;
+    height: 30px;
+    padding: 10px;
 }
 /* estilo del contenido del footer */
 .pie{
@@ -116,10 +146,9 @@
     
 }
 .tamLogo{
-    width: 35px;
-    height: 35px;
+    width: 20px;
+    height: 20px;
     padding-left: 30px;
-    
 }
 /*-----------------------*/
 /* estilo sobre nosotros */
@@ -138,7 +167,7 @@
     "imgEmTres"
     "imgEmCuatro";
     grid-template-columns: 100%;
-    grid-template-rows: 100px 300px 300px 300px 300px;
+    grid-template-rows: 150px 300px 300px 300px 300px;
     padding: 05px;
     
 }
@@ -154,8 +183,9 @@
     display:flex;
     justify-content: center;
     margin-left: 20px;
-    margin-bottom: 15px;
+    padding: 20px;
     width: 80%;
+    height: 70px;
 }
 /* tamaño de las imágenes */
 .imgEmUno{
@@ -178,7 +208,7 @@
     width: 80%;
     height: 80%;
     border: 03px solid #b1c0a5; 
-    border-radius: 10px;
+    border-radius: 15px;
 }
 /*------------------------------*/
 /* estilo productos y servicios */
@@ -253,6 +283,12 @@
         "prodSeis"
         "prodSiete"
         "prodOcho"
+        "prodNueve"
+        "prodDiez"
+        "prodOnce"
+        "prodDoce"
+        "prodTrece"
+        "prodCatorce"
         "videoEx"
         ;
     grid-template-columns: 100%;
@@ -306,6 +342,42 @@
     justify-content: center;
     margin-bottom: 10px;
 }
+.prodNueve{
+    grid-area: prodNueve;
+    display:flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.prodDiez{
+    grid-area: prodDiez;
+    display:flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.prodOnce{
+    grid-area: prodOnce;
+    display:flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.prodDoce{
+    grid-area: prodDoce;
+    display:flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.prodTrece{
+    grid-area: prodTrece;
+    display:flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.prodCatorce{
+    grid-area: prodCatorce;
+    display:flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
 .videoEx{
     grid-area: videoEx;
 }
@@ -333,10 +405,10 @@
     background-color: rgb(180, 180, 178);
 }
 .desProdUno{
-    width: 170px;
+    width: 150px;
 }
 .desProdDos{
-    width: 270px;
+    width: 230px;
 }
 /* tamaño del video */
 .videoEx{
@@ -424,6 +496,16 @@
     grid-area: botones;
     margin-left: 100px;
 }
+.datos{
+    display:flex;
+    flex-direction: column;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 10px;
+    color:rgb(29, 16, 54);
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
 /*-------------------------*/
 /* estilo links de interés */
 /* estilo del subtítulo */
@@ -483,14 +565,35 @@
        modifico tamaño de los textos y de la imagen */
     .titulo{
         font-size: 28px;
+        text-shadow: 5px 5px rgb(244, 246, 248);
     }
     .estiloDes{
         font-size: 18px; 
         gap: 40px;
     }
     .imagen{
-        max-width: 100%;    
-        max-height: 100%;
+        padding: 25px;
+    }
+    .ofertas{
+        font-size: 18px;
+    }
+    .imgOfer{
+        margin-top: 25px;
+    }
+    .desOfer{
+        margin-left: 250px;
+        margin-bottom: 25px;
+        width: 800px;
+        text-align: center;
+        font-size: 16px;
+    }
+    .modoCompra{
+        font-size: 16px;
+    }
+    .tamIco{
+        width: 50px;
+        height: 50px;
+        padding: 20px;
     }
     /* estilo del contenido del footer 
        cambio la disposición de los hijos*/
@@ -532,7 +635,6 @@
         
     }
     .historia{
-        
         font-size: 14px;
         color:rgb(92, 52, 172);
         background-color: #dcf3e1;
@@ -611,14 +713,16 @@
         grid-template-areas: 
             "prodUno prodDos prodTres"
             "prodCuatro prodCinco prodSeis"
-            "prodSiete prodOcho videoEx";
+            "prodSiete prodOcho prodNueve"
+            "prodDiez prodOnce prodDoce"
+            "prodTrece prodCatorce videoEx";
         grid-template-columns: 30% 30% 30%;
-        grid-template-rows: 30% 30% 30%;
+        grid-template-rows: 400px 400px 400px 400px 400px;
     }
-    .prodUno, .prodCuatro, .prodSiete{
-        margin-bottom: 100px;
-    }
-    .prodSiete{
+    /*.prodUno, .prodCuatro, .prodSiete, .prodDiez, .prodTrece{
+        margin-bottom: 20px;
+    }*/
+    .prodTrece{
         padding-bottom: 20px;
     }
     /* defino tamaño de las imágenes*/
@@ -684,7 +788,7 @@
         grid-template-columns: 250px 250px 300px;
         grid-template-rows: 50px 50px 50px 170px 50px;
         margin-left: 150px;
-        margin-bottom: 200px;
+        margin-bottom: 150px;
         padding: 25px;
         width: 850px;
         border-bottom: 03px solid rgb(113, 129, 113);
@@ -697,6 +801,12 @@
     }
     .botones{
         margin-left: 550px;
+    }
+    .datos{
+        display:flex;
+        flex-direction: row;
+        font-size: 16px;
+        margin-bottom: 25px;
     }
     /*--------------------------*/
     /* estilo links de interés */
