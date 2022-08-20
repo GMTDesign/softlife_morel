@@ -213,7 +213,7 @@
     "productos"
     "servicios";
     grid-template-columns: 100%;
-    grid-template-rows: 200px 200px auto;
+    grid-template-rows: 300px 200px auto;
     padding: 15px;
     margin-left: 15px;
     font-size: 10px;
@@ -242,6 +242,10 @@
     height: 50%;
     margin-left: 100px;
     margin-bottom: 15px;
+}
+.escritorio, .estanteria, .armario, .sillaUno, .sillaDos, .sofa, .sillaTres, .mesa, .accesorio,
+.directorio, .oficina, .recepcion{
+    display:none;
 }
 /*-------------------------------------------------*/
 /* estilo galería */
@@ -272,91 +276,77 @@
         "prodCatorce"
         "videoEx";
     grid-template-columns: 100%;
-    grid-template-rows: repeat(15, 250px);
+    grid-template-rows: repeat(15, 260px);
 }
 .prodUno{
     grid-area: prodUno;
     display:flex;
     justify-content: center;
-    margin-bottom: 10px;
 }
 .prodDos{
     grid-area: prodDos;
     display:flex;
     justify-content: center;
-    margin-bottom: 10px;
 }
 .prodTres{
     grid-area: prodTres;
     display:flex;
     justify-content: center;
-    margin-bottom: 10px;
 }
 .prodCuatro{
     grid-area: prodCuatro;
     display:flex;
     justify-content: center;
-    margin-bottom: 10px;
 }
 .prodCinco{
     grid-area: prodCinco;
     display:flex;
     justify-content: center;
-    margin-bottom: 10px;
 }
 .prodSeis{
     grid-area: prodSeis;
     display:flex;
     justify-content: center;
-    margin-bottom: 10px;
 }
 .prodSiete{
     grid-area: prodSiete;
     display:flex;
     justify-content: center;
-    margin-bottom: 10px;
 }
 .prodOcho{
     grid-area: prodOcho;
     display:flex;
     justify-content: center;
-    margin-bottom: 10px;
 }
 .prodNueve{
     grid-area: prodNueve;
     display:flex;
     justify-content: center;
-    margin-bottom: 10px;
 }
 .prodDiez{
     grid-area: prodDiez;
     display:flex;
     justify-content: center;
-    margin-bottom: 10px;
 }
 .prodOnce{
     grid-area: prodOnce;
     display:flex;
     justify-content: center;
-    margin-bottom: 10px;
 }
 .prodDoce{
     grid-area: prodDoce;
     display:flex;
     justify-content: center;
-    margin-bottom: 10px;
 }
 .prodTrece{
     grid-area: prodTrece;
     display:flex;
     justify-content: center;
-    margin-bottom: 10px;
 }
 .prodCatorce{
     grid-area: prodCatorce;
     display:flex;
     justify-content: center;
-    margin-bottom: 10px;
 }
 .videoEx{
     grid-area: videoEx;
@@ -647,13 +637,13 @@
         display:grid;
         grid-template-areas: 
         "productos servicios";
-        grid-template-columns: 600px 600px;
+        grid-template-columns: 550px 600px;
         grid-template-rows: 800px;
         padding: 20px;
         background-image: url("https://images.unsplash.com/photo-1634822929331-ee4dc2c97fc4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80");
         background-repeat: no-repeat;
-        background-size:auto;
-        background-position: center;
+        background-size: 20%;
+        background-position:top;
         font-size: 14px;
     }
     /* estilo de la listas */
@@ -671,9 +661,15 @@
     .imgServicios{
         display: none;
     }
+    .escritorio, .estanteria, .armario, .sillaUno, .sillaDos, .sofa, .sillaTres, .mesa, .accesorio,
+    .directorio, .oficina, .recepcion{
+    display:flex;
+    }
     .escritorio{
         width: 220px;
         height: 20px;
+        position:absolute;
+        transform:translate(150px, -20px);
         transition: all 1s;
     }
     .escritorio:hover{
@@ -686,19 +682,23 @@
     .estanteria{
         width: 220px;
         height: 20px;
-        transition: all 2s;
+        position:absolute;
+        transform:translate(150px, -20px);
+        transition: all 1s;
     }
     .estanteria:hover{
         color: #0a0a0a;
         background-image: url("../imagenes/estanteria.png");
         background-repeat: no-repeat;
-        width: 300px;
+        width: 320px;
         height: 250px;
     }
     .armario{
         width: 220px;
         height: 20px;
-        transition: all 2s;
+        position:absolute;
+        transform:translate(150px, -20px);
+        transition: all 1s;
     }
     .armario:hover{
         color: #0a0a0a;
@@ -710,7 +710,9 @@
     .sillaUno{
         width: 220px;
         height: 20px;
-        transition: all 2s;
+        position:absolute;
+        transform:translate(150px, -20px);
+        transition: all 1s;
     }
     .sillaUno:hover{
         color: #0a0a0a;
@@ -722,7 +724,9 @@
     .sillaDos{
         width: 220px;
         height: 20px;
-        transition: all 2s;
+        position:absolute;
+        transform:translate(150px, -20px);
+        transition: all 1s;
     }
     .sillaDos:hover{
         color: #0a0a0a;
@@ -734,7 +738,10 @@
     .sofa{
         width: 220px;
         height: 20px;
-        transition: all 2s;
+        position:absolute;
+        transform:translate(150px, -20px);
+        transition: all 1s;
+        
     }
     .sofa:hover{
         color: #0a0a0a;
@@ -746,7 +753,9 @@
     .sillaTres{
         width: 220px;
         height: 20px;
-        transition: all 2s;
+        position:absolute;
+        transform:translate(150px, -20px);
+        transition: all 1s;
     }
     .sillaTres:hover{
         color: #0a0a0a;
@@ -758,7 +767,9 @@
     .mesa{
         width: 220px;
         height: 20px;
-        transition: all 2s;
+        position:absolute;
+        transform:translate(150px, -20px);
+        transition: all 1s;
     }
     .mesa:hover{
         color: #0a0a0a;
@@ -770,7 +781,9 @@
     .accesorio{
         width: 220px;
         height: 20px;
-        transition: all 2s;
+        position:absolute;
+        transform:translate(150px, -20px);
+        transition: all 1s;
     }
     .accesorio:hover{
         color: #0a0a0a;
@@ -782,7 +795,9 @@
     .directorio{
         width: 220px;
         height: 20px;
-        transition: all 2s;
+        position:absolute;
+        transform:translate(100px, -20px);
+        transition: all 1s;
     }
     .directorio:hover{
         color: #0a0a0a;
@@ -794,7 +809,9 @@
     .oficina{
         width: 220px;
         height: 20px;
-        transition: all 2s;
+        position:absolute;
+        transform:translate(100px, -20px);
+        transition: all 1s;
     }
     .oficina:hover{
         color: #0a0a0a;
@@ -806,7 +823,9 @@
     .recepcion{
         width: 220px;
         height: 20px;
-        transition: all 2s;
+        position:absolute;
+        transform:translate(100px, -20px);
+        transition: all 1s;
     }
     .recepcion:hover{
         color: #0a0a0a;
@@ -840,59 +859,9 @@
     .prodTrece{
         padding-bottom: 20px;
     }
-    .prodUno:hover{
-        transform: scale(1.2, 1.2);
-        transition: all 2s;
-    }
-    .prodDos:hover{
-        transform: scale(1.2, 1.2);
-        transition: all 2s;
-    }
-    .prodTres:hover{
-        transform: scale(1.2, 1.2);
-        transition: all 2s;
-    }
-    .prodCuatro:hover{
-        transform: scale(1.2, 1.2);
-        transition: all 2s;
-    }
-    .prodCinco:hover{
-        transform: scale(1.2, 1.2);
-        transition: all 2s;
-    }
-    .prodSeis:hover{
-        transform: scale(1.2, 1.2);
-        transition: all 2s;
-    }
-    .prodSiete:hover{
-        transform: scale(1.2, 1.2);
-        transition: all 2s;
-    }
-    .prodOcho:hover{
-        transform: scale(1.2, 1.2);
-        transition: all 2s;
-    }
-    .prodNueve:hover{
-        transform: scale(1.2, 1.2);
-        transition: all 2s;
-    }
-    .prodDiez:hover{
-        transform: scale(1.2, 1.2);
-        transition: all 2s;
-    }
-    .prodOnce:hover{
-        transform: scale(1.2, 1.2);
-        transition: all 2s;
-    }
-    .prodDoce:hover{
-        transform: scale(1.2, 1.2);
-        transition: all 2s;
-    }
-    .prodTrece:hover{
-        transform: scale(1.2, 1.2);
-        transition: all 2s;
-    }
-    .prodCatorce:hover{
+    .prodUno:hover, .prodDos:hover, .prodTres:hover, .prodCuatro:hover, .prodCinco:hover,
+    .prodSeis:hover, .prodSiete:hover, .prodOcho:hover, .prodNueve:hover, .prodDiez:hover,
+    .prodOnce:hover, .prodDoce:hover, .prodTrece:hover, .prodCatorce:hover{
         transform: scale(1.2, 1.2);
         transition: all 2s;
     }
