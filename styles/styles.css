@@ -1,5 +1,6 @@
 *{
     margin:0;
+    list-style-type: none;
     font-family: 'Merriweather', serif;
 }
 /* index:html: color de fondo de la página + grilla principal*/
@@ -18,7 +19,6 @@
 }
 .informacion{
     grid-area: informacion;
-    
 }
 .pie{
     grid-area: pie;
@@ -33,10 +33,6 @@
 /* posición del logo */ 
 #inicio{
     margin-left: 20px;
-}
-/* lista sin estilo */
-.menu{
-    list-style-type: none;
 }
 /* estilo de los links (a futuro será un menú desplegable) */
 .link{
@@ -59,7 +55,7 @@
 .titulo{
     font-family: 'Merriweather', serif;
     color:rgb(56, 37, 95);
-    text-shadow: 2px 2px rgb(244, 246, 248);
+    text-shadow: 2px 2px rgb(167, 168, 170);
     font-size: 16px;
     margin-top: 02px;
     padding: 50px;
@@ -76,7 +72,7 @@
     font-family: 'Quicksand', sans-serif;
     font-size: 12px;
     color:rgb(56, 37, 95);
-    text-shadow: 2px 2px rgb(166, 191, 230);
+    text-shadow: 2px 2px rgb(167, 168, 170);
     padding: 15px;  
     gap: 25px;  
 }
@@ -113,8 +109,8 @@
     align-items: center;
 }
 .tamIco{
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     padding: 10px;
 }
 /* estilo del contenido del footer */
@@ -180,8 +176,6 @@
     padding: 20px;
     border-radius: 10px;
     border-bottom: 03px solid #b1c0a5; 
-    display:flex;
-    justify-content: center;
     margin-left: 20px;
     padding: 20px;
     width: 80%;
@@ -212,13 +206,12 @@
 }
 /*------------------------------*/
 /* estilo productos y servicios */
-/* posiciono los divs en fila*/
+/* posiciono los divs */
 .menuProd{
     display:grid;
     grid-template-areas: 
     "productos"
-    "servicios"
-    "imgServicios";
+    "servicios";
     grid-template-columns: 100%;
     grid-template-rows: 200px 200px auto;
     padding: 15px;
@@ -228,14 +221,9 @@
 /* estilo de la listas */
 .productos{
     grid-area: productos;
-    
 }
 .productos, .servicios{
     color:rgb(92, 52, 172);
-    background-color: #dcf3e1;
-    border-radius: 10px;
-    border-right: 03px solid #b1c0a5;
-    border-bottom: 03px solid #b1c0a5;
     width: 320px;
     margin-bottom: 15px;
 }
@@ -248,19 +236,12 @@
 .servicios{
     grid-area: servicios;
 }
-.imgProductos{
-    display:none;
-}
+/* tamaño de la imagen*/
 .imgServicios{
-    grid-area: imgServicios;
-}
-/* tamaño de las imágenes*/
-.serviTam{
-    display:flex;
-    align-content: center;
-    width: 80%;
-    height: 60%;
-    margin: 10px;
+    width: 50%;
+    height: 50%;
+    margin-left: 100px;
+    margin-bottom: 15px;
 }
 /*-------------------------------------------------*/
 /* estilo galería */
@@ -291,7 +272,7 @@
         "prodCatorce"
         "videoEx";
     grid-template-columns: 100%;
-    grid-template-rows: repeat(9, 300px);
+    grid-template-rows: repeat(15, 250px);
 }
 .prodUno{
     grid-area: prodUno;
@@ -550,7 +531,7 @@
         flex-direction: row;
         align-content: flex-end;
         margin-left: 500px;
-        }
+    }
     .link{
         background-color: #D89A9E;
         padding: 05px;
@@ -564,10 +545,11 @@
        modifico tamaño de los textos y de la imagen */
     .titulo{
         font-size: 28px;
-        text-shadow: 5px 5px rgb(244, 246, 248);
+        text-shadow: 3px 3px rgb(167, 168, 170);
     }
     .estiloDes{
         font-size: 18px; 
+        text-shadow: 3px 3px (167, 168, 170);
         gap: 40px;
     }
     .imagen{
@@ -590,8 +572,8 @@
         font-size: 16px;
     }
     .tamIco{
-        width: 50px;
-        height: 50px;
+        width: 35px;
+        height: 35px;
         padding: 20px;
     }
     /* estilo del contenido del footer 
@@ -631,7 +613,6 @@
         grid-template-columns: 300px 450px 450px;
         grid-template-rows: 500px 500px;
         padding: 20px;
-        
     }
     .historia{
         font-size: 14px;
@@ -642,7 +623,6 @@
         border-bottom: 05px solid #b1c0a5; 
         display:flex;
         flex-direction: column;
-        justify-content: start;
         margin: 15px;
         height: 200px;
         width: 250px;
@@ -666,36 +646,174 @@
     .menuProd{
         display:grid;
         grid-template-areas: 
-        "productos imgProductos servicios imgServicios";
-        grid-template-columns: 25% 20% 25% 20%;
-        grid-template-rows: 100%;
+        "productos servicios";
+        grid-template-columns: 600px 600px;
+        grid-template-rows: 800px;
         padding: 20px;
-        margin-left: 20px;
+        background-image: url("https://images.unsplash.com/photo-1634822929331-ee4dc2c97fc4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80");
+        background-repeat: no-repeat;
+        background-size:auto;
+        background-position: center;
         font-size: 14px;
     }
     /* estilo de la listas */
-    .productos, .servicios{
-        display:flex;
-        flex-direction: column;
-        height: 350px;
+    .productos{
+        margin-left: 50px;
+    }
+    .servicios{
+        margin-left: 190px;
     }
     #tituloProd, #tituloSer{
         font-size: 18px;
         margin-top: 15px;
         margin-left: 20px;
     }
-    .imgProductos{
-        display:flex;
-        grid-area: imgProductos;
+    .imgServicios{
+        display: none;
     }
-    /* tamaño de las imágenes*/
-    .sillaTam, .serviTam{
-        display:flex;
-        align-content: center;
-        width: 80%;
-        height: 90%;
-        padding: 20px;
-        margin: 10px;
+    .escritorio{
+        width: 220px;
+        height: 20px;
+        transition: all 1s;
+    }
+    .escritorio:hover{
+        color: #0a0a0a;
+        background-image: url("../imagenes/escritorio.png");
+        background-repeat: no-repeat;
+        width: 300px;
+        height: 250px;
+    }
+    .estanteria{
+        width: 220px;
+        height: 20px;
+        transition: all 2s;
+    }
+    .estanteria:hover{
+        color: #0a0a0a;
+        background-image: url("../imagenes/estanteria.png");
+        background-repeat: no-repeat;
+        width: 300px;
+        height: 250px;
+    }
+    .armario{
+        width: 220px;
+        height: 20px;
+        transition: all 2s;
+    }
+    .armario:hover{
+        color: #0a0a0a;
+        background-image: url("../imagenes/armario.png");
+        background-repeat: no-repeat;
+        width: 300px;
+        height: 260px;
+    }
+    .sillaUno{
+        width: 220px;
+        height: 20px;
+        transition: all 2s;
+    }
+    .sillaUno:hover{
+        color: #0a0a0a;
+        background-image: url("../imagenes/silla_01.png");
+        background-repeat: no-repeat;
+        width: 300px;
+        height: 250px;
+    }
+    .sillaDos{
+        width: 220px;
+        height: 20px;
+        transition: all 2s;
+    }
+    .sillaDos:hover{
+        color: #0a0a0a;
+        background-image: url("../imagenes/silla_02.png");
+        background-repeat: no-repeat;
+        width: 300px;
+        height: 250px;
+    }
+    .sofa{
+        width: 220px;
+        height: 20px;
+        transition: all 2s;
+    }
+    .sofa:hover{
+        color: #0a0a0a;
+        background-image: url("../imagenes/sofa.png");
+        background-repeat: no-repeat;
+        width: 300px;
+        height: 250px;
+    }
+    .sillaTres{
+        width: 220px;
+        height: 20px;
+        transition: all 2s;
+    }
+    .sillaTres:hover{
+        color: #0a0a0a;
+        background-image: url("../imagenes/silla_03.png");
+        background-repeat: no-repeat;
+        width: 300px;
+        height: 250px;
+    }
+    .mesa{
+        width: 220px;
+        height: 20px;
+        transition: all 2s;
+    }
+    .mesa:hover{
+        color: #0a0a0a;
+        background-image: url("../imagenes/mesa.png");
+        background-repeat: no-repeat;
+        width: 300px;
+        height: 250px;
+    }
+    .accesorio{
+        width: 220px;
+        height: 20px;
+        transition: all 2s;
+    }
+    .accesorio:hover{
+        color: #0a0a0a;
+        background-image: url("../imagenes/accesorio.png");
+        background-repeat: no-repeat;
+        width: 300px;
+        height: 250px;
+    }
+    .directorio{
+        width: 220px;
+        height: 20px;
+        transition: all 2s;
+    }
+    .directorio:hover{
+        color: #0a0a0a;
+        background-image: url("../imagenes/directorio.png");
+        background-repeat: no-repeat;
+        width: 300px;
+        height: 150px;
+    }
+    .oficina{
+        width: 220px;
+        height: 20px;
+        transition: all 2s;
+    }
+    .oficina:hover{
+        color: #0a0a0a;
+        background-image: url("../imagenes/oficina.png");
+        background-repeat: no-repeat;
+        width: 300px;
+        height: 200px;
+    }
+    .recepcion{
+        width: 220px;
+        height: 20px;
+        transition: all 2s;
+    }
+    .recepcion:hover{
+        color: #0a0a0a;
+        background-image: url("../imagenes/recepcion.png");
+        background-repeat: no-repeat;
+        width: 300px;
+        height: 250px;
     }
     /*----------------*/
     /* estilo galería */
@@ -704,6 +822,7 @@
         text-align: left;
         font-size: 18px;
         margin-left: 100px;
+        padding: 40px;
         color:rgb(92, 52, 172);
     }
     /* distribución de las imágenes*/
@@ -716,13 +835,66 @@
             "prodDiez prodOnce prodDoce"
             "prodTrece prodCatorce videoEx";
         grid-template-columns: 30% 30% 30%;
-        grid-template-rows: 400px 400px 400px 400px 400px;
+        grid-template-rows: repeat(5, 400px);
     }
-    /*.prodUno, .prodCuatro, .prodSiete, .prodDiez, .prodTrece{
-        margin-bottom: 20px;
-    }*/
     .prodTrece{
         padding-bottom: 20px;
+    }
+    .prodUno:hover{
+        transform: scale(1.2, 1.2);
+        transition: all 2s;
+    }
+    .prodDos:hover{
+        transform: scale(1.2, 1.2);
+        transition: all 2s;
+    }
+    .prodTres:hover{
+        transform: scale(1.2, 1.2);
+        transition: all 2s;
+    }
+    .prodCuatro:hover{
+        transform: scale(1.2, 1.2);
+        transition: all 2s;
+    }
+    .prodCinco:hover{
+        transform: scale(1.2, 1.2);
+        transition: all 2s;
+    }
+    .prodSeis:hover{
+        transform: scale(1.2, 1.2);
+        transition: all 2s;
+    }
+    .prodSiete:hover{
+        transform: scale(1.2, 1.2);
+        transition: all 2s;
+    }
+    .prodOcho:hover{
+        transform: scale(1.2, 1.2);
+        transition: all 2s;
+    }
+    .prodNueve:hover{
+        transform: scale(1.2, 1.2);
+        transition: all 2s;
+    }
+    .prodDiez:hover{
+        transform: scale(1.2, 1.2);
+        transition: all 2s;
+    }
+    .prodOnce:hover{
+        transform: scale(1.2, 1.2);
+        transition: all 2s;
+    }
+    .prodDoce:hover{
+        transform: scale(1.2, 1.2);
+        transition: all 2s;
+    }
+    .prodTrece:hover{
+        transform: scale(1.2, 1.2);
+        transition: all 2s;
+    }
+    .prodCatorce:hover{
+        transform: scale(1.2, 1.2);
+        transition: all 2s;
     }
     /* defino tamaño de las imágenes*/
     .galTamUno{
@@ -785,7 +957,7 @@
         "inquietud inquietud inquietud"
         "botones botones botones";
         grid-template-columns: 250px 250px 300px;
-        grid-template-rows: 50px 50px 50px 170px 50px;
+        grid-template-rows: repeat(3, 50px) 170px 50px;
         margin-left: 150px;
         margin-bottom: 150px;
         padding: 25px;
