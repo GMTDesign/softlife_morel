@@ -3,143 +3,83 @@
     list-style-type: none;
     font-family: 'Merriweather', serif;
 }
-/* index:html: color de fondo de la página + grilla principal*/
+/* index:html: color de fondo de la página */
 .contenido{
     background-color: #e8e8e4;
-    display:grid;
-    grid-template-areas: 
-      "cabecera"
-      "informacion"
-      "pie";
-    grid-template-columns: 100%;
-    grid-template-rows: 100px auto 100px;  
 }
-.cabecera{
-    grid-area: cabecera;
+/* estilo de la barra de navegación */
+.navbar{
+    background-color: #AEB4A9;
 }
-.informacion{
-    grid-area: informacion;
+.logo{
+    width: 70%;
+    height: 70%;
 }
-.pie{
-    grid-area: pie;
-}
-/*estilo de la cabecera y del footer*/
-.cabecera{
-    background-color:#AEB4A9;
-    display:flex;
-    flex-direction: row;
-    align-items: center;
-} 
-/* posición del logo */ 
-#inicio{
-    margin-left: 20px;
-}
-/* estilo de los links (a futuro será un menú desplegable) */
-.link{
-    display:flex;
-    flex-direction: column;
-    margin-right: 10px;
+.btn{
+    color: #230f30;
+    background-color: #D89A9E;
     padding: 02px;
-}
-.link a{
-    color: #6d597a; 
-    font-weight: bold;
     font-size: 10px;
-    text-decoration: none;
-}    
-.link a:hover{
-    color: #80ed99; 
-    font-weight: normal;
 }
-/* estilo de la página principal */
+.btn:hover{
+    color: #80ed99;
+}
+/* estilo títulos y tamaño imágenes */
 .titulo{
     font-family: 'Merriweather', serif;
     color:rgb(56, 37, 95);
     text-shadow: 2px 2px rgb(167, 168, 170);
     font-size: 16px;
-    margin-top: 02px;
-    padding: 50px;
-    text-align: center;
-}
-.descripcion{
-    display:flex;
-    flex-direction: row;
 }
 .estiloDes{
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
     font-family: 'Quicksand', sans-serif;
-    font-size: 12px;
     color:rgb(56, 37, 95);
     text-shadow: 2px 2px rgb(167, 168, 170);
-    padding: 15px;  
-    gap: 25px;  
+    font-size: 12px;
 }
 .imagen{
-    max-width: 90%;    
-    max-height: 90%;
+    width: 150%;    
+    height: 120%;
     padding: 15px;
 }
 .ofertas{
     font-family: 'Quicksand', sans-serif;
-    font-size: 14px;
+    font-size: 12px;
     color:rgb(29, 16, 54);
-    text-align: center;
+    margin-top: 50px;
 }
-.imgOfer{
-    margin-top: 10px;
-    width: 50%;
-    height: 50%;
-}
-.desOfer{
-    margin-left: 40px;
-    margin-bottom: 20px;
-    width: 300px;
-    text-align: center;
-    font-size: 10px;
-}
-.modoCompra{
-    display:flex;
-    flex-direction: row;
-    font-family: 'Quicksand', sans-serif;
-    font-size: 10px;
-    color:rgb(29, 16, 54);
-    justify-content: center;
-    align-items: center;
-}
-.tamIco{
-    width: 20px;
-    height: 20px;
-    padding: 10px;
-}
-/* estilo del contenido del footer */
-.pie{
-    display:grid;
-    grid-template-areas: 
-    "intereses"
-    "copy";
-    grid-template-columns: 100%;
-    grid-template-rows: 70px 30px;
-    background-color:#AEB4A9;
-    
-}
-.intereses, .contenidoPie{
-    grid-area: intereses;
-    display:flex;
-    flex-direction: row;
-    padding: 10px;
-    
-}
-.copy{
-    grid-area: copy;
-    display:flex;
-    justify-content: center;
-    margin-bottom: 05px;
+.oferDes{
     font-family: 'Quicksand', sans-serif;
     font-size: 12px;
-    color:rgb(92, 52, 172);
-    
+    color:rgb(220, 218, 224);
+    background-color:rgb(65, 63, 63);
+    padding: 0;
+}
+.modoCompra{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 12px;
+    color:rgb(29, 16, 54);
+}
+.tamIco{
+    width: 50px;
+    height: 50px;
+    padding: 10px;    
+}
+/* estilo del footer */
+.colorPie{
+    background-color: #AEB4A9;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.copy{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 12px;
+    color:rgb(33, 19, 61);
+}
+.link-dark{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 12px;
+    color:rgb(33, 19, 61);
 }
 .tamLogo{
     width: 20px;
@@ -148,12 +88,20 @@
 }
 /*-----------------------*/
 /* estilo sobre nosotros */
-.subSobreNos{
-    font-family: 'Quicksand', sans-serif;
-    font-size: 12px;
-    color:rgb(92, 52, 172);
-    margin-left: 50px;
+.tituloDos{
+    font-family: 'Merriweather', serif;
+    color:rgb(56, 37, 95);
+    text-shadow: 2px 2px rgb(167, 168, 170);
+    font-size: 16px;
+    text-align: center;
+    margin-top: 50px;
 }
+.subSobreNos{
+    color:rgb(92, 52, 172);
+    font-size: 12px;
+    margin-left: 20px;
+    padding: 10px;
+  }
 .descriEm{
     display:grid;
     grid-template-areas: 
@@ -165,7 +113,6 @@
     grid-template-columns: 100%;
     grid-template-rows: 150px 300px 300px 300px 300px;
     padding: 05px;
-    
 }
 .historia{
     grid-area: historia;
@@ -179,7 +126,7 @@
     margin-left: 20px;
     padding: 20px;
     width: 80%;
-    height: 70px;
+    height: 140px;
 }
 /* tamaño de las imágenes */
 .imgEmUno{
@@ -213,7 +160,7 @@
     "productos"
     "servicios";
     grid-template-columns: 100%;
-    grid-template-rows: 300px 200px auto;
+    grid-template-rows: 320px 200px;
     padding: 15px;
     margin-left: 15px;
     font-size: 10px;
@@ -225,7 +172,7 @@
 .productos, .servicios{
     color:rgb(92, 52, 172);
     width: 320px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 #tituloProd, #tituloSer{
     color:rgb(92, 52, 172);
@@ -249,107 +196,12 @@
 }
 /*-------------------------------------------------*/
 /* estilo galería */
-/* formato subtítulo de Galería y Links de interés */
+/* formato subtítulo de Galería */
 #subtitulo{
     text-align: left;
     font-size: 12px;
     margin-left: 100px;
     color:rgb(92, 52, 172);
-}
-/* distribución de las imágenes*/
-.galEstilo{
-    display: grid;
-    grid-template-areas: 
-        "prodUno"
-        "prodDos"
-        "prodTres"
-        "prodCuatro"
-        "prodCinco"  
-        "prodSeis"
-        "prodSiete"
-        "prodOcho"
-        "prodNueve"
-        "prodDiez"
-        "prodOnce"
-        "prodDoce"
-        "prodTrece"
-        "prodCatorce"
-        "videoEx";
-    grid-template-columns: 100%;
-    grid-template-rows: repeat(15, 260px);
-}
-.prodUno{
-    grid-area: prodUno;
-    display:flex;
-    justify-content: center;
-}
-.prodDos{
-    grid-area: prodDos;
-    display:flex;
-    justify-content: center;
-}
-.prodTres{
-    grid-area: prodTres;
-    display:flex;
-    justify-content: center;
-}
-.prodCuatro{
-    grid-area: prodCuatro;
-    display:flex;
-    justify-content: center;
-}
-.prodCinco{
-    grid-area: prodCinco;
-    display:flex;
-    justify-content: center;
-}
-.prodSeis{
-    grid-area: prodSeis;
-    display:flex;
-    justify-content: center;
-}
-.prodSiete{
-    grid-area: prodSiete;
-    display:flex;
-    justify-content: center;
-}
-.prodOcho{
-    grid-area: prodOcho;
-    display:flex;
-    justify-content: center;
-}
-.prodNueve{
-    grid-area: prodNueve;
-    display:flex;
-    justify-content: center;
-}
-.prodDiez{
-    grid-area: prodDiez;
-    display:flex;
-    justify-content: center;
-}
-.prodOnce{
-    grid-area: prodOnce;
-    display:flex;
-    justify-content: center;
-}
-.prodDoce{
-    grid-area: prodDoce;
-    display:flex;
-    justify-content: center;
-}
-.prodTrece{
-    grid-area: prodTrece;
-    display:flex;
-    justify-content: center;
-}
-.prodCatorce{
-    grid-area: prodCatorce;
-    display:flex;
-    justify-content: center;
-}
-.videoEx{
-    grid-area: videoEx;
 }
 /* defino tamaño de las imágenes*/
 .galTamUno{
@@ -379,20 +231,6 @@
 }
 .desProdDos{
     width: 230px;
-}
-/* tamaño del video */
-.videoEx{
-    position: relative;
-    overflow: hidden;
-    padding-top: 56.25%;
-}
-.videoEx iframe{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 80%;
-    height: 80%;
-    padding-left: 10%;
 }
 /*-----------------*/
 /* estilo contacto */
@@ -451,9 +289,6 @@
     grid-area: cliente;
     margin-left: 35px;
 }
-.empresa{
-    grid-area: empresa;
-}
 .inquietud{
     grid-area: inquietud;
     margin-left: 35px;
@@ -508,27 +343,26 @@
     border-radius: 10px;
 }
 .logoEm{
+    grid-area: logoEm; 
     display:flex;
     justify-content: center;
+}
+.nombreEm{
+    grid-area: nombreEm;
+}
+.infoEm{
+    grid-area: infoEm;
 }
 /*--------------------------*/
 /* modificación para desktop*/
 @media screen and (min-width: 1200px) {
-    /* index.html: estilo de los links 
-       cambio la disposición y el formato */
-    .menu ul{
-        display:flex;
-        flex-direction: row;
-        align-content: flex-end;
-        margin-left: 500px;
+    /* index.html: estilo de la barra de navegación */
+       .logo{
+        width: 100%;
+        height: 100%;
     }
-    .link{
-        background-color: #D89A9E;
-        padding: 05px;
-        border-radius: 10px;
-        border-bottom: 02px solid #846267;
-    }
-    .link a{
+    .btn{
+        padding: 10px;
         font-size: 14px;
     }    
     /* estilo de la página principal 
@@ -538,59 +372,53 @@
         text-shadow: 3px 3px rgb(167, 168, 170);
     }
     .estiloDes{
-        font-size: 18px; 
+        font-size: 22px; 
         text-shadow: 3px 3px (167, 168, 170);
-        gap: 40px;
     }
     .imagen{
-        padding: 25px;
+        width: 120%;
+        height: 100%;
+        margin-left: 100px;
+        padding: 20px;
     }
     .ofertas{
         font-size: 18px;
     }
-    .imgOfer{
-        margin-top: 25px;
-    }
-    .desOfer{
-        margin-left: 250px;
-        margin-bottom: 25px;
-        width: 800px;
-        text-align: center;
+    .oferDes{
         font-size: 16px;
+        padding-top: 10px;
+        padding-bottom: 0;
     }
     .modoCompra{
-        font-size: 16px;
+        font-size: 18px;
     }
     .tamIco{
-        width: 35px;
-        height: 35px;
+        width: 100px;
+        height: 100px;
         padding: 20px;
     }
-    /* estilo del contenido del footer 
-       cambio la disposición de los hijos*/
-    .pie{
-        display:grid;
-        grid-template-areas: 
-        "copy intereses";
-        grid-template-columns: 500px auto;
-        grid-template-rows: 100%;
-    }
-    .intereses{
-        padding: 20px;
+    .colorPie{
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
     .copy{
         font-size: 16px;
-        align-items: center; 
-        margin-left: 20px;
     }
-    .contenidoPie{
-        width: 50%;
-        height: 75%;
-        padding: 20px;
+    .link-dark{
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .tamLogo{
+        width: 40px;
+        height: 40px;
+        padding-left: 60px;
     }
     /* fin index.html */
     /*-----------------------*/
     /* estilo sobre nosotros */
+    .tituloDos{
+        font-size: 28px;
+    }
     .subSobreNos{
         font-size: 18px;
         margin-left: 50px;
@@ -614,7 +442,7 @@
         display:flex;
         flex-direction: column;
         margin: 15px;
-        height: 200px;
+        height: 320px;
         width: 250px;
     }
     /* tamaño de las imágenes */
@@ -638,7 +466,7 @@
         grid-template-areas: 
         "productos servicios";
         grid-template-columns: 550px 600px;
-        grid-template-rows: 800px;
+        grid-template-rows: 700px;
         padding: 20px;
         background-image: url("https://images.unsplash.com/photo-1634822929331-ee4dc2c97fc4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80");
         background-repeat: no-repeat;
@@ -741,7 +569,6 @@
         position:absolute;
         transform:translate(150px, -20px);
         transition: all 1s;
-        
     }
     .sofa:hover{
         color: #0a0a0a;
@@ -844,24 +671,8 @@
         padding: 40px;
         color:rgb(92, 52, 172);
     }
-    /* distribución de las imágenes*/
-    .galEstilo{
-        display: grid;
-        grid-template-areas: 
-            "prodUno prodDos prodTres"
-            "prodCuatro prodCinco prodSeis"
-            "prodSiete prodOcho prodNueve"
-            "prodDiez prodOnce prodDoce"
-            "prodTrece prodCatorce videoEx";
-        grid-template-columns: 30% 30% 30%;
-        grid-template-rows: repeat(5, 400px);
-    }
-    .prodTrece{
-        padding-bottom: 20px;
-    }
-    .prodUno:hover, .prodDos:hover, .prodTres:hover, .prodCuatro:hover, .prodCinco:hover,
-    .prodSeis:hover, .prodSiete:hover, .prodOcho:hover, .prodNueve:hover, .prodDiez:hover,
-    .prodOnce:hover, .prodDoce:hover, .prodTrece:hover, .prodCatorce:hover{
+    /* escalo las imágenes*/
+    .prodUno:hover{
         transform: scale(1.2, 1.2);
         transition: all 2s;
     }
@@ -883,30 +694,14 @@
     /* estilo descripción de los productos*/
     .desProdUno, .desProdDos{
         font-size: 14px;
-        text-align: center;
-        padding: 03px;
-        border-radius: 05px;
-        background-color: rgb(180, 180, 178);
+        padding: 05px;
+        border-radius: 10px;
     }
     .desProdUno{
         width: 250px;
     }
     .desProdDos{
         width: 300px;
-    }
-    /* tamaño del video */
-    .videoEx{
-        position: relative;
-        overflow: hidden;
-        padding-top: 56.25%;
-    }
-    .videoEx iframe{
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 80%;
-        height: 80%;
-        padding-left: 10%;
     }
     /*-----------------*/
     /* estilo contacto */

@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=SoftLife, initial-scale=1.0">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
   <link rel="stylesheet" href="./styles/styles.css">
   <!-- fuentes -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,73 +15,131 @@
   <title>SofLife</title>
 </head>
 <body class="contenido">
-  <header class="cabecera">
-    <!-- el logo lleva a la página de inicio-->
-    <a href="./index.html"><img src="./imagenes/logo_SL.png" id="inicio"></a>
-    <!-- barra de navegación-->
-    <nav class="menu">
-      <ul>
-        <li class="link"><a href="./pages/sobre-nosotros.html">Sobre Nosotros</a></li>
-        <li class="link"><a href="./pages/productos.html">Productos y Servicios</a></li>
-        <li class="link"><a href="./pages/galeria.html">Galería</a></li>
-        <li class="link"><a href="./pages/contacto.html">Contacto</a></li>
-      </ul>
+  <header>
+    <!-- inicio barra de navegación de bootstrap -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html">
+          <img class="logo" src="./imagenes/logo_SL.png" width="30" height="24">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item px-5" >
+              <a class="btn btn-secondary" role="button" href="./pages/sobre-nosotros.html">Sobre Nosotros</a>
+            </li>
+            <li class="nav-item px-5">
+              <a class="btn btn-secondary" role="button" href="./pages/productos.html">Productos y Servicios</a>
+            </li>
+            <li class="nav-item px-5">
+              <a class="btn btn-secondary" role="button" href="./pages/galeria.html">Galería</a>
+            </li>
+            <li class="nav-item px-5">
+              <a class="btn btn-secondary" role="button" href="./pages/contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
+    <!-- fin barra de navegación de bootstrap -->
   </header>
-  <article class="informacion">
-    <section class="titulo">
-      <h1>Bienvenidos a SoftLife</h1>
-    </section>
-    <!-- presentación de la empresa-->
-    <section class="descripcion">
-      <div>
-        <img src="https://images.unsplash.com/photo-1634712282287-14ed57b9cc89?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=906&q=80" class="imagen">
+  <article>
+    <!-- presentación de la empresa - grid de bootstrap-->
+    <section class="container-fluid">
+      <div class="row">
+        <p class="h1 mt-5 text-center titulo">Bienvenidos a SoftLife</p>
       </div>
-      <div class="estiloDes">
-        <h3>Diseño</h3>
-        <h3>Confort</h3>
-        <h3>Calidad</h3>
-        <h3>Precio</h3>
+      <div class="row">
+        <div class="col-8">
+          <img class="imagen" src="https://images.unsplash.com/photo-1634712282287-14ed57b9cc89?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=906&q=80">
+        </div>
+        <div class="col-4 align-self-center estiloDes">
+          <p>Diseño</p>
+          <p>Confort</p>
+          <p>Calidad</p>
+          <p>Precio</p>
+        </div>  
       </div>
-    </section>
-    <!-- disposición de las ofertas  -->
-    <section class="ofertas">
-      <p>Ofertas del Mes</p>
-      <p class="desOferUno">Pago con débito 10% de descuento</p>
-      <div>
-        <img class="imgOfer" src="https://images.unsplash.com/photo-1615803796379-b4cda8e9c09c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTE5fHxzaWxsYXN8ZW58MHx8MHx8&auto=format&fit=crop&w=400&q=60">
-        <p class="desOfer">Juego de comedor compuesto por mesa rectangular con cinco sillas</p>
+        <!-- disposición de las ofertas  -->
+      <div class="row">
+        <div class="col text-center ofertas">
+          <p>Ofertas del Mes</p>
+          <p>Pago con débito 10% de descuento</p>
+        </div>
       </div>
-      <div>
-        <img class="imgOfer" src="https://images.unsplash.com/photo-1537212013010-de9c76f8f0ae?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEyfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=400&q=60">
-        <p class="desOfer">Sofá acolchado en color gris con mesa central de madera</p>
+      <!-- carousel de ofertas -->
+      <div class="row">
+        <div class="col d-flex justify-content-center">
+          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner mb-3">
+              <div class="carousel-item active">
+                <img class="d-block mx-auto w-100" src="https://images.unsplash.com/photo-1616486886892-ff366aa67ba4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXxNOVNjWTBrOW9rOHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=400&q=60">
+                <div class="carousel-caption d-block oferDes">
+                  <p">Juego de comedor y dos sofás</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="https://images.unsplash.com/photo-1616047006789-b7af5afb8c20?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MnxNOVNjWTBrOW9rOHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=400&q=60">
+                <div class="carousel-caption d-block oferDes">
+                  <p">Sillón con mesa central</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="https://images.unsplash.com/photo-1604307743907-df8d5fe9f1de?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLWxpa2VkfDIzfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60">
+                <div class="carousel-caption d-block oferDes">
+                  <p>Escritorio y silla para PC</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <!-- fin carousel -->
+        </div>
+      </div>  
+      <!-- disposición de modos de compra-->
+      <div class="row modoCompra">
+        <div class="col d-flex flex-row justify-content-center align-items-center">
+          <img class="tamIco" src="./imagenes/camion.png">
+          <p>Envíos a todo el país</p>
+          <img class="tamIco" src="./imagenes/tarjeta-de-debito.png">
+          <p>Todas las formas de pago</p>
+        </div>  
       </div>
-    </section>
-    <section class="modoCompra">
-        <img class="tamIco" src="./imagenes/camion.png">
-        <p>Envíos a todo el país</p>
-        <img class="tamIco" src="./imagenes/tarjeta-de-debito.png">
-        <p>Todas las formas de pago</p>
     </section>
   </article> 
-  <footer class="pie">
-    <!-- creo una grilla para modificar
-         la disposición del pie para mobile
-         y para desktop -->
-    <div class="copy">
-      <h5> GMTDesign2022</h5>
-    </div>
-    <div class="intereses">
-      <ul class="menuPie">
-        <li class="link">
-          <a href="./pages/links-interes.html">Links de Interés</a>
-        </li>
-      </ul>
-      <div class="contenidoPie">
-        <img src="./imagenes/compartir_2.png" class="tamLogo">
-        <img src="./imagenes/chat.png" class="tamLogo">
+  <footer class="colorPie">
+    <section class="container-fluid mt-3">
+      <div class="row">
+        <div class="col-4 d-flex flex-row justify-content-around copy">
+          <p> GMTDesign2022</p>
+        </div>
+        <div class="col-4 d-flex flex-row justify-content-around">
+          <a class="link-dark" href="./pages/links-interes.html">Links de Interés</a>
+        </div>
+        <div class="col-2 d-flex flex-row justify-content-around tamLogo">
+          <img src="./imagenes/compartir_2.png">
+        </div> 
+        <div class="col-2 d-flex flex-row justify-content-around tamLogo">
+          <img src="./imagenes/chat.png">
+        </div>
       </div>
-    </div>
+    </section>
   </footer> 
+  <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>
