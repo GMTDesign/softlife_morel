@@ -14,7 +14,7 @@
   <!-- título de la ventana -->
   <title>Productos</title>
 </head>
-<body class="contenido">
+<body class="contenido" id="inicio">
   <header>
     <!-- inicio barra de navegación de bootstrap -->
     <nav class="navbar navbar-expand-lg">
@@ -30,8 +30,19 @@
             <li class="nav-item px-5" >
               <a class="btn btn-secondary" role="button" href="../pages/sobre-nosotros.html">Sobre Nosotros</a>
             </li>
+            <div class="dropdown px-5">
+              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Productos
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../pages/productos.html#prodLiving">Juegos de Living</a></li>
+                <li><a class="dropdown-item" href="../pages/productos.html#prodComedor">Juegos de Comedor</a></li>
+                <li><a class="dropdown-item" href="../pages/productos.html#prodOficina">Muebles de Oficina</a></li>
+                <li><a class="dropdown-item" href="../pages/productos.html#prodAccesorio">Accesorios</a></li>    
+              </ul>
+            </div>
             <li class="nav-item px-5">
-              <a class="btn btn-secondary" role="button" href="../pages/productos.html">Productos y Servicios</a>
+              <a class="btn btn-secondary" role="button" href="../pages/servicios.html">Servicios</a>
             </li>
             <li class="nav-item px-5">
               <a class="btn btn-secondary" role="button" href="../pages/galeria.html">Galería</a>
@@ -48,79 +59,335 @@
   <article>
     <section>
       <h1 class="tituloDos">SoftLife</h1>
+      <h3 id="tituloProd">Productos</h3>
     </section>
-    <section class="menuProd">
-      <div class="productos">
-        <h3 id="tituloProd">Productos</h3>
-        <!-- menú de productos-->
-        <ul>
-          <li>Empresas
-            <ul>
-              <li>Escritorios</li>
-              <li class="escritorio">»»</li>
-              <br>
-              <li>Estanterías</li>
-              <li class="estanteria">»»</li>
-              <br>
-              <li>Armarios</li>
-              <li class="armario">»»</li>
-              <br>
-              <li>Sillas ergonómicas</li>
-              <li class="sillaUno">»»</li>
-              <br>
-              <li>Sillas para PC</li>
-              <li class="sillaDos">»»</li>
-              <br>
-            </ul>
-          </li>
-          <li>Personas
-            <ul>
-              <li>Sofás</li>
-              <li class="sofa">»»</li>
-              <br>
-              <li>Sillas</li>
-              <li class="sillaTres">»»</li>
-              <br>
-              <li>Mesas</li>
-              <li class="mesa">»»</li>
-              <br>
-              <li>Accesorios</li>
-              <li class="accesorio">»»</li>
-            </ul>
-          </li>
-        </ul>  
+    <section class="container-fluid">
+      <!--imágenes de livings-->
+      <div class="row">
+        <h3 id="prodLiving">Amoblamientos de living</h3>
       </div>
-      <div class="servicios">
-        <h3 id="tituloSer">Servicios</h3>
-        <!-- menú de servicios-->
-        <ul>
-          <li>Empresas
-            <ul>
-              <li>Diseño de ambientes
-                <ul>
-                  <li>Directorio</li>
-                  <li class="directorio">»»</li>
-                  <br>
-                  <li>Oficinas</li>
-                  <li class="oficina">»»</li>
-                  <br>
-                  <li>Recepción</li>
-                  <li class="recepcion">»»</li>
-                  <br>
-                </ul>
-              </li>
+      <div class="row">
+        <!--primera imagen-->
+        <article class="col-sm-12 col-xl-4 d-flex justify-content-center">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="https://images.unsplash.com/photo-1579488085123-6a6a3630f0f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLWxpa2VkfDU2fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60">
+            <div class="card-body">
+              <h6 class="card-title">Sofá en color gris</h6>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Colores disponibles:</li>
+              <li class="list-group-item">Gris - Rojo - Crema</li>
             </ul>
-          </li>
-          <li>Personas</li>
-          <ul>
-            <li>Asesoramiento acorde al hogar</li>
-          </ul>
-        </ul>  
+          </div>
+        </article>
+        <!--segunda imagen-->
+        <article class="col-sm-12 col-xl-4 d-flex justify-content-center">
+          <div class="card" style="width: 18rem;">
+            <img  class="card-img-top" src="https://images.unsplash.com/photo-1611967164521-abae8fba4668?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLWxpa2VkfDYwfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60">
+            <div class="card-body">
+              <h6 class="card-title">Sofá en color gris</h6>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Colores disponibles:</li>
+              <li class="list-group-item">Gris - Aguamarina - Maíz</li>
+            </ul>
+          </div>
+        </article>
+        <!--tercera imagen-->
+        <article class="col-sm-12 col-xl-4 d-flex justify-content-center">
+          <div class="card" style="width: 18rem;">
+            <img  class="card-img-top" src="https://images.unsplash.com/photo-1506898667547-42e22a46e125?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLWxpa2VkfDE1OXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60">
+            <div class="card-body">
+              <h6 class="card-title">Sofá en color celeste</h6>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Colores disponibles:</li>
+              <li class="list-group-item">Celeste - Crema - Canela</li>
+            </ul>
+          </div>
+        </article>
       </div>
-    </section>
-    <section>
-      <img class="imgServicios" src="https://images.unsplash.com/photo-1634822929331-ee4dc2c97fc4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80">
-    </section>
+      <!--link para volver al menú-->
+      <div class="row">
+        <a href="#inicio" class="iniPagina">Volver</a>
+      </div>
+      <div class="row mt-sm-2 mt-xl-3">
+        <!--cuarta imagen-->
+        <article class="col-sm-12 col-xl-4 d-flex justify-content-center">
+          <div class="card" style="width: 18rem;">
+            <img  class="card-img-top" src="https://images.unsplash.com/photo-1550581190-9c1c48d21d6c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLWxpa2VkfDE1Nnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60">
+            <div class="card-body">
+              <h6 class="card-title">Juego de living</h6>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Colores disponibles:</li>
+              <li class="list-group-item">Negro - Azul - Menta</li>
+            </ul>
+          </div>
+        </article>
+        <!--quinta imagen-->
+        <article class="col-sm-12 col-xl-4 d-flex justify-content-center">
+          <div class="card" style="width: 18rem;">
+            <img  class="card-img-top" src="https://images.unsplash.com/photo-1501876725168-00c445821c9e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLWxpa2VkfDEyNnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60">
+            <div class="card-body">
+              <h6 class="card-title">Juego de living</h6>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Colores disponibles:</li>
+              <li class="list-group-item">Blanco - Beige - Negro</li>
+            </ul>
+          </div>
+        </article>
+        <!--sexta imagen-->
+        <article class="col-sm-12 col-xl-4 d-flex justify-content-center">
+          <div class="card" style="width: 18rem;">
+            <img  class="card-img-top" src="https://images.unsplash.com/photo-1616047006789-b7af5afb8c20?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MnxNOVNjWTBrOW9rOHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60">
+            <div class="card-body">
+              <h6 class="card-title">Juego de living</h6>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Colores disponibles:</li>
+              <li class="list-group-item">Naranja - Beige - Celeste</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+      <div class="row">
+        <a href="#inicio" class="iniPagina">Volver</a>
+      </div>
+      <!--imágenes de comedores-->
+      <div class="row mt-sm-2 mt-xl-5">
+        <h3 id="prodComedor">Amoblamientos para comedores</h3>
+      </div>
+      <div class="row">
+        <!--primera imagen-->
+        <article class="col-sm-12 col-xl-4 d-flex justify-content-center">
+          <div class="card" style="width: 18rem;">
+            <img  class="card-img-top" src="https://images.unsplash.com/photo-1602359350978-541664551d37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLWxpa2VkfDgyfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60">
+            <div class="card-body">
+              <h6 class="card-title">Silla moderna color blanco</h6>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Colores disponibles:</li>
+              <li class="list-group-item">Blanco - Negro - Verde manzana</li>
+            </ul>
+          </div>
+        </article>
+        <!--segunda imagen-->
+        <article class="col-sm-12 col-xl-4 d-flex justify-content-center">
+          <div class="card" style="width: 18rem;">
+            <img  class="card-img-top" src="https://images.unsplash.com/photo-1592078615290-033ee584e267?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLWxpa2VkfDg0fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60">
+            <div class="card-body">
+              <h6 class="card-title">Silla de cuero color negro</h6>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Colores disponibles:</li>
+              <li class="list-group-item">Negro - Crema - Blanco</li>
+            </ul>
+          </div>
+        </article>
+        <!--tercera imagen-->
+        <article class="col-sm-12 col-xl-4 d-flex justify-content-center">
+          <div class="card" style="width: 18rem;">
+            <img  class="card-img-top" src="https://images.unsplash.com/photo-1592885331172-bf57d2281135?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLWxpa2VkfDc5fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60">
+            <div class="card-body">
+              <h6 class="card-title">Silla de plástico blanco</h6>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Colores disponibles:</li>
+              <li class="list-group-item">Blanco - Negro</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+      <div class="row">
+        <a href="#inicio" class="iniPagina">Volver</a>
+      </div>
+      <div class="row mt-sm-2 mt-xl-3">
+        <!--cuarta imagen-->
+        <article class="col-sm-12 col-xl-4 d-flex justify-content-center">
+          <div class="card" style="width: 18rem;">
+            <img  class="card-img-top" src="https://images.unsplash.com/photo-1572025442348-511bdcae389b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLWxpa2VkfDEzMnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60">
+            <div class="card-body">
+              <h6 class="card-title">Juego de comedor</h6>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Mesa de madera marrón</li>
+              <li class="list-group-item">Sillas metálicas negras</li>
+            </ul>
+          </div>
+        </article>
+        <!--quinta imagen-->
+        <article class="col-sm-12 col-xl-4 d-flex justify-content-center">
+          <div class="card" style="width: 18rem;">
+            <img  class="card-img-top" src="https://images.unsplash.com/photo-1599327286062-40b0a7f2b305?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLWxpa2VkfDcxfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60">
+            <div class="card-body">
+              <h6 class="card-title">Juego de comedor</h6>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Mesa de madera blanca</li>
+              <li class="list-group-item">Sillas de plástico blancas</li>
+            </ul>
+          </div>
+        </article>
+        <!--sexta imagen-->
+        <article class="col-sm-12 col-xl-4 d-flex justify-content-center">
+          <div class="card" style="width: 18rem;">
+            <img  class="card-img-top" src="https://images.unsplash.com/photo-1551216223-37c8d1dbec5c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLWxpa2VkfDY2fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60">
+            <div class="card-body">
+              <h6 class="card-title">Juego de comedor</h6>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Mesa rectangular negra</li>
+              <li class="list-group-item">Sillas modernas en color negro</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+      <div class="row">
+        <a href="#inicio" class="iniPagina">Volver</a>
+      </div>
+      <!--imágenes de muebles de oficina-->
+      <div class="row mt-sm-3 mt-xl-5">
+        <h3 id="prodOficina">Amoblamientos para oficinas</h3>
+      </div>
+      <div class="row">
+        <!--primera imagen-->
+        <article class="col-sm-12 col-xl-4 d-flex justify-content-center">
+          <div class="card" style="width: 18rem;">
+            <img  class="card-img-top" src="https://images.unsplash.com/photo-1630266481474-d04af6ba660d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLWxpa2VkfDE0fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60">
+            <div class="card-body">
+              <h6 class="card-title">Silla para PC</h6>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Colores disponibles:</li>
+              <li class="list-group-item">Blanco - Negro</li>
+            </ul>
+          </div>
+        </article>
+        <!--segunda imagen-->
+        <article class="col-sm-12 col-xl-4 d-flex justify-content-center">
+          <div class="card" style="width: 18rem;">
+            <img  class="card-img-top" src="https://images.unsplash.com/photo-1525896544042-354764aa27e6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLWxpa2VkfDYyfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60">
+            <div class="card-body">
+              <h6 class="card-title">Sofás acolchados para recepción</h6>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Colores disponibles:</li>
+              <li class="list-group-item">Rosa pálido - Beige - Negro</li>
+            </ul>
+          </div>
+        </article>
+        <!--tercera imagen-->
+        <article class="col-sm-12 col-xl-4 d-flex justify-content-center">
+          <div class="card" style="width: 18rem;">
+            <img  class="card-img-top" src="https://images.unsplash.com/photo-1526887593587-a307ea5d46b4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLWxpa2VkfDk3fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60">
+            <div class="card-body">
+              <h6 class="card-title">Escritorio de madera con cajonera</h6>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Colores disponibles:</li>
+              <li class="list-group-item">Marrón/Blanco - Marrón/Negro</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+      <div class="row">
+        <a href="#inicio" class="iniPagina">Volver</a>
+      </div>
+      <div class="row mt-sm-2 mt-xl-3">
+        <!--cuarta imagen-->
+        <article class="col-sm-12 col-xl-4 d-flex justify-content-center">
+          <div class="card" style="width: 18rem;">
+            <img  class="card-img-top" src="https://images.unsplash.com/photo-1652498196118-4577d5f6abd5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8NXxNOVNjWTBrOW9rOHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60">
+            <div class="card-body">
+              <h6 class="card-title">Escritorio de madera con cajonera</h6>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Colores disponibles:</li>
+              <li class="list-group-item">Marrón - Negro</li>
+            </ul>
+          </div>
+        </article>
+        <!--quinta imagen-->
+        <article class="col-sm-12 col-xl-4 d-flex justify-content-center">
+          <div class="card" style="width: 18rem;">
+            <img  class="card-img-top" src="https://images.unsplash.com/photo-1605797062143-689362c5c8a5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLWxpa2VkfDI0fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60">
+            <div class="card-body">
+              <h6 class="card-title">Estantería de madera</h6>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Colores disponibles:</li>
+              <li class="list-group-item">Marrón - Blanco</li>
+            </ul>
+          </div>
+        </article>
+        <!--sexta imagen-->
+        <article class="col-sm-12 col-xl-4 d-flex justify-content-center">
+          <div class="card" style="width: 18rem;">
+            <img  class="card-img-top" src="https://images.unsplash.com/photo-1658704277317-007155b64aea?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLWxpa2VkfDI5fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60">
+            <div class="card-body">
+              <h6 class="card-title">Estantería de madera</h6>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Colores disponibles:</li>
+              <li class="list-group-item">Negro - Marrón</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+      <div class="row">
+        <a href="#inicio" class="iniPagina">Volver</a>
+      </div>
+      <!--imágenes de accesorios-->
+      <div class="row mt-sm-3 mt-xl-5">
+        <h3 id="prodAccesorio">Accesorios</h3>
+      </div>
+      <div class="row mb-5">
+        <!--primera imagen-->
+        <article class="col-sm-12 col-xl-4 d-flex justify-content-center">
+          <div class="card" style="width: 18rem;">
+            <img  class="card-img-top" src="https://images.unsplash.com/photo-1582737068804-2e7d18036fe7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLWxpa2VkfDEwNHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60">
+            <div class="card-body">
+              <h6 class="card-title">Lámpara regulable</h6>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Colores disponibles:</li>
+              <li class="list-group-item">Blanco - Negro (pie plateado)</li>
+            </ul>
+          </div>
+        </article>
+        <!--segunda imagen-->
+        <article class="col-sm-12 col-xl-4 d-flex justify-content-center">
+          <div class="card" style="width: 18rem;">
+            <img  class="card-img-top" src="https://images.unsplash.com/photo-1543512214-4f76e81f8bfc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLWxpa2VkfDEwOHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60">
+            <div class="card-body">
+              <h6 class="card-title">Lámpara regulable</h6>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Colores disponibles:</li>
+              <li class="list-group-item">Negro - Blanco (pie de madera)</li>
+            </ul>
+          </div>
+        </article>
+        <!--tercera imagen-->
+        <article class="col-sm-12 col-xl-4 d-flex justify-content-center">
+          <div class="card" style="width: 18rem;">
+            <img  class="card-img-top" src="https://images.unsplash.com/photo-1576185839275-57e9426fd1ee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLWxpa2VkfDh8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60">
+            <div class="card-body">
+              <h6 class="card-title">Lámparas colgantes</h6>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Colores disponibles:</li>
+              <li class="list-group-item">Blanco - Negro</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+      <div class="row">
+        <a href="#inicio" class="iniPagina">Volver</a>
+      </div>
+    </section>  
   </article> 
   <footer class="colorPie">
     <section class="container-fluid mt-3">
@@ -132,11 +399,8 @@
           <a class="link-dark" href="../pages/links-interes.html">Links de Interés</a>
         </div>
         <div class="col-2 d-flex flex-row justify-content-around tamLogo">
-          <img src="../imagenes/compartir_2.png">
+          <img src="../imagenes/redes.png">
         </div> 
-        <div class="col-2 d-flex flex-row justify-content-around tamLogo">
-          <img src="../imagenes/chat.png">
-        </div>
       </div>
     </section>
   </footer> 

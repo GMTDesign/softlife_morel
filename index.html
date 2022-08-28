@@ -30,8 +30,20 @@
             <li class="nav-item px-5" >
               <a class="btn btn-secondary" role="button" href="./pages/sobre-nosotros.html">Sobre Nosotros</a>
             </li>
+            <div class="dropdown px-5">
+              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Productos
+              </button>
+              <!--menú desplegable para los productos-->
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="./pages/productos.html#prodLiving">Juegos de Living</a></li>
+                <li><a class="dropdown-item" href="./pages/productos.html#prodComedor">Juegos de Comedor</a></li>
+                <li><a class="dropdown-item" href="./pages/productos.html#prodOficina">Muebles de Oficina</a></li>
+                <li><a class="dropdown-item" href="./pages/productos.html#prodAccesorio">Accesorios</a></li>    
+              </ul>
+            </div>
             <li class="nav-item px-5">
-              <a class="btn btn-secondary" role="button" href="./pages/productos.html">Productos y Servicios</a>
+              <a class="btn btn-secondary" role="button" href="./pages/servicios.html">Servicios</a>
             </li>
             <li class="nav-item px-5">
               <a class="btn btn-secondary" role="button" href="./pages/galeria.html">Galería</a>
@@ -87,13 +99,13 @@
                 </div>
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100" src="https://images.unsplash.com/photo-1616047006789-b7af5afb8c20?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MnxNOVNjWTBrOW9rOHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=400&q=60">
+                <img class="d-block mx-auto w-100" src="https://images.unsplash.com/photo-1616047006789-b7af5afb8c20?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MnxNOVNjWTBrOW9rOHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=400&q=60">
                 <div class="carousel-caption d-block oferDes">
                   <p">Sillón con mesa central</p>
                 </div>
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100" src="https://images.unsplash.com/photo-1604307743907-df8d5fe9f1de?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLWxpa2VkfDIzfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60">
+                <img class="d-block mx-auto w-100" src="https://images.unsplash.com/photo-1604307743907-df8d5fe9f1de?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLWxpa2VkfDIzfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60">
                 <div class="carousel-caption d-block oferDes">
                   <p>Escritorio y silla para PC</p>
                 </div>
@@ -122,6 +134,7 @@
       </div>
     </section>
   </article> 
+  <!--diseño del footer aplicando bootstrap-->
   <footer class="colorPie">
     <section class="container-fluid mt-3">
       <div class="row">
@@ -132,11 +145,8 @@
           <a class="link-dark" href="./pages/links-interes.html">Links de Interés</a>
         </div>
         <div class="col-2 d-flex flex-row justify-content-around tamLogo">
-          <img src="./imagenes/compartir_2.png">
+          <img src="./imagenes/redes.png">
         </div> 
-        <div class="col-2 d-flex flex-row justify-content-around tamLogo">
-          <img src="./imagenes/chat.png">
-        </div>
       </div>
     </section>
   </footer> 
