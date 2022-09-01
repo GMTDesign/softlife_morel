@@ -1,0 +1,94 @@
+.contenedor{
+//estilo de texto e imágenes    
+    .filaTitulo{
+        .titulo{
+            font-family: $primary-font;
+            color: $font-primary-color;
+            text-shadow: $shadow-color-sm;
+            font-size: $size-titulo-sm;
+        }
+    }
+    .filaImagen{
+        .imagen{
+            z-index: 1;
+        }
+        .estiloDes{
+            font-family: $secondary-font;
+            color: $font-primary-color;
+            text-shadow: $shadow-color-sm;
+            font-size: $size-subtitulo-sm;
+            z-index: 2;
+        }
+    }   
+    .filaOferta{
+        .ofertas{
+            font-family: $secondary-font;
+            font-size: $size-textoDos;
+            color: $font-secondary-color;
+            margin-top: 50px;
+        }
+    } 
+    .filaCarousel{
+        .oferDes{
+            font-family: $secondary-font;
+            font-size: $size-textoUno;
+            color: $font-third-color;
+            background-color: $ofer-bg-color;
+            padding: 0;
+        }
+    }
+    .filaCompra{
+        font-family: $secondary-font;
+        font-size: $size-textoUno;
+        color: $font-secondary-color;
+        .tamIco{
+            width: $icono-width-sm;
+            height: $icono-height-sm;
+            padding: 10px;    
+        }
+    }
+}
+/* modificación para desktop*/
+@media screen and (min-width: 1200px) {
+    .contenedor{
+        //estilo de texto e imágenes    
+        .filaTitulo{
+            .titulo{
+                font-size: $size-titulo-xl;
+                text-shadow: $shadow-color-xl;
+            }
+        }
+        .filaImagen{
+            .imagen{
+                width: $img-width;
+                height: $img-height;
+                margin-left: 100px;
+                padding: 20px;
+            }
+            .estiloDes{
+                font-size: $size-subtitulo-xl; 
+                text-shadow: $shadow-color-xl;
+            }
+        }   
+        .filaOferta{
+            .ofertas{
+                font-size: $size-textoCuatro;  
+            }
+        } 
+        .filaCarousel{
+            .oferDes{
+                font-size: $size-textoTres;
+                padding-top: 10px;
+                padding-bottom: 0;
+            }
+        }
+        .filaCompra{
+            font-size: $size-textoTres;
+            .tamIco{
+                width: $icono-width-xl;
+                height: $icono-height-xl;
+                padding: 20px;
+            }
+        }
+    }
+}

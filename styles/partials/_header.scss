@@ -1,0 +1,47 @@
+/* estilo de la barra de navegación */
+.navbar{
+    background-color: $nav-bg-color;
+    .logo{
+        width: $logo-width-sm;
+        height: $logo-height-sm;
+    }
+    .btn{
+        color: $boton-color;
+        background-color: $boton-bg-color; 
+        padding: 02px;
+        font-size: $size-textoUno;
+        &:hover{
+            color: $botonHover-color;
+        }
+    }
+    .dropdown-menu{
+        width: 100px;
+        .dropdown-item{
+            color: $boton-color;
+            font-size: $size-textoUno;
+            &:hover{
+                background-color: $boton-bg-color;
+            }
+        }
+    }
+}
+/* modificación para desktop*/
+@media screen and (min-width: 1200px) {
+    /* responsive para desktop */
+    .navbar{
+        .logo {
+            width: $logo-width-xl;
+            height: $logo-height-xl;
+        }
+        .btn {
+            padding: 05px;
+            font-size: $size-textoTres;
+        }
+        .dropdown-menu {
+            width: 180px;
+            .dropdown-item {
+                font-size: $size-textoTres;
+            }
+        }
+    }
+}    

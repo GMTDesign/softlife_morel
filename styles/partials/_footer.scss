@@ -1,0 +1,34 @@
+/* estilo del footer */
+.colorPie{
+    background-color: $nav-bg-color;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    .copy, .link-dark{
+        font-family: $secondary-font;
+        font-size: $size-textoDos;
+        color: $font-secondary-color;
+    }
+    .link-dark{
+        font-weight: bold;
+    }
+    .tamLogo{
+        width: $logoF-width-sm;
+        height: $logoF-height-sm;
+        padding-left: 30px;
+    }
+}
+/* modificación para desktop*/
+@media screen and (min-width: 1200px){
+    .colorPie{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        .copy, .link-dark{
+            font-size: $size-textoTres;
+        }
+        .tamLogo{
+            width: $logoF-width-xl;
+            height: $logoF-height-xl;
+            padding-left: 60px;
+        }
+    }
+}    
