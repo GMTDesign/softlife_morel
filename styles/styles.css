@@ -29,282 +29,7 @@
     opacity: 1;
   }
 }
-* {
-  margin: 0;
-  list-style-type: none;
-  font-family: "Merriweather", serif;
-}
-
-/* index:html: color de fondo de la página */
-.contenido {
-  background-color: rgb(232, 232, 228);
-}
-
-/* estilo de la barra de navegación */
-.navbar {
-  background-color: rgb(174, 180, 169);
-}
-.navbar .logo {
-  width: 70%;
-  height: 70%;
-}
-.navbar .btn {
-  color: rgb(35, 15, 48);
-  background-color: #f8c49f;
-  padding: 2px;
-  font-size: 12px;
-}
-.navbar .btn:hover {
-  color: #80ed99;
-}
-.navbar .dropdown-menu {
-  width: 100px;
-}
-.navbar .dropdown-menu .dropdown-item {
-  color: rgb(35, 15, 48);
-  font-size: 12px;
-}
-.navbar .dropdown-menu .dropdown-item:hover {
-  background-color: #f8c49f;
-}
-
-/* modificación para desktop*/
-@media screen and (min-width: 1200px) {
-  /* responsive para desktop */
-  .navbar .logo {
-    width: 100%;
-    height: 100%;
-  }
-  .navbar .btn {
-    padding: 5px;
-    font-size: 16px;
-  }
-  .navbar .dropdown-menu {
-    width: 180px;
-  }
-  .navbar .dropdown-menu .dropdown-item {
-    font-size: 16px;
-  }
-}
-.contenedor .filaTitulo .titulo {
-  font-family: "Merriweather", serif;
-  color: rgb(56, 37, 95);
-  text-shadow: 2px 2px rgb(167, 168, 170);
-  font-size: 18px;
-}
-.contenedor .filaImagen .imagen {
-  z-index: 1;
-}
-.contenedor .filaImagen .estiloDes {
-  font-family: "Quicksand", sans-serif;
-  color: rgb(56, 37, 95);
-  text-shadow: 2px 2px rgb(167, 168, 170);
-  font-size: 16px;
-  z-index: 2;
-}
-.contenedor .filaOferta .ofertas {
-  font-family: "Quicksand", sans-serif;
-  font-size: 14px;
-  color: rgb(29, 16, 54);
-  margin-top: 50px;
-}
-.contenedor .filaCarousel .oferDes {
-  font-family: "Quicksand", sans-serif;
-  font-size: 12px;
-  color: rgb(220, 218, 224);
-  background-color: rgb(65, 63, 63);
-  padding: 0;
-}
-.contenedor .filaCompra {
-  font-family: "Quicksand", sans-serif;
-  font-size: 12px;
-  color: rgb(29, 16, 54);
-}
-.contenedor .filaCompra .tamIco {
-  width: 50px;
-  height: 50px;
-  padding: 10px;
-}
-
-/* modificación para desktop*/
-@media screen and (min-width: 1200px) {
-  .contenedor .filaTitulo .titulo {
-    font-size: 28px;
-    text-shadow: 3px 3px rgb(167, 168, 170);
-  }
-  .contenedor .filaImagen .imagen {
-    width: 120%;
-    height: 100%;
-    margin-left: 100px;
-    padding: 20px;
-  }
-  .contenedor .filaImagen .estiloDes {
-    font-size: 26px;
-    text-shadow: 3px 3px rgb(167, 168, 170);
-  }
-  .contenedor .filaOferta .ofertas {
-    font-size: 18px;
-  }
-  .contenedor .filaCarousel .oferDes {
-    font-size: 16px;
-    padding-top: 10px;
-    padding-bottom: 0;
-  }
-  .contenedor .filaCompra {
-    font-size: 16px;
-  }
-  .contenedor .filaCompra .tamIco {
-    width: 100px;
-    height: 100px;
-    padding: 20px;
-  }
-}
-/* estilo del footer */
-.colorPie {
-  background-color: rgb(174, 180, 169);
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-.colorPie .copy, .colorPie .link-dark {
-  font-family: "Quicksand", sans-serif;
-  font-size: 14px;
-  color: rgb(29, 16, 54);
-}
-.colorPie .link-dark {
-  font-weight: bold;
-}
-.colorPie .tamLogo {
-  width: 20px;
-  height: 20px;
-  padding-left: 30px;
-}
-
-/* modificación para desktop*/
-@media screen and (min-width: 1200px) {
-  .colorPie {
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-  .colorPie .copy, .colorPie .link-dark {
-    font-size: 16px;
-  }
-  .colorPie .tamLogo {
-    width: 40px;
-    height: 40px;
-    padding-left: 60px;
-  }
-}
-/*-----------------------*/
-/* estilo sobre nosotros */
-/*estilos de título y subtítulo*/
-.tituloDos {
-  font-family: "Merriweather", serif;
-  color: rgb(56, 37, 95);
-  text-shadow: 2px 2px rgb(167, 168, 170);
-  font-size: 20px;
-  text-align: center;
-  margin-top: 50px;
-}
-
-.subSobreNos {
-  color: rgb(92, 52, 172);
-  font-size: 14px;
-  margin-left: 20px;
-  padding: 10px;
-}
-
-/*grilla: descripción de la empresa más imágenes */
-.descriEm {
-  display: grid;
-  grid-template-areas: "historia" "imgEmUno" "imgEmDos" "imgEmTres" "imgEmCuatro";
-  grid-template-columns: 100%;
-  grid-template-rows: 150px 300px 300px 300px 300px;
-  padding: 5px;
-}
-
-.historia {
-  grid-area: historia;
-  font-family: "Quicksand", sans-serif;
-  font-size: 10px;
-  color: rgb(61, 37, 109);
-  background-color: rgb(243, 243, 226);
-  border-bottom: 2px solid rgb(179, 179, 133);
-  padding: 20px;
-  border-radius: 10px;
-  margin-left: 20px;
-  padding: 20px;
-  width: 80%;
-  height: 140px;
-}
-
-/* tamaño de las imágenes */
-.imgEmUno {
-  grid-area: imgEmUno;
-}
-
-.imgEmDos {
-  grid-area: imgEmDos;
-}
-
-.imgEmTres {
-  grid-area: imgEmTres;
-}
-
-.imgEmCuatro {
-  grid-area: imgEmCuatro;
-}
-
-.imgEmUno, .imgEmDos, .imgEmTres, .imgEmCuatro {
-  display: flex;
-  justify-content: center;
-}
-
-.imgTam {
-  width: 80%;
-  height: 80%;
-  border-bottom: 3px solid #7d807c;
-  border-radius: 15px;
-}
-
-/*------------------------*/
-/* estilo productos */
-/*estilo de título y subtítulos*/
-#tituloProd, #tituloServ {
-  color: rgb(92, 52, 172);
-  font-size: 18px;
-  text-align: center;
-}
-
-#prodLiving, #prodComedor, #prodOficina, #prodAccesorio {
-  font-size: 14px;
-  font-style: italic;
-  text-align: center;
-  padding: 10px;
-}
-
-/*estilo de las cards*/
-.card-title {
-  font-size: 14px;
-}
-
-.list-group-item {
-  font-size: 12px;
-}
-
-/*link para ir al inicio de la página*/
-.iniPagina {
-  display: flex;
-  justify-content: center;
-}
-
-/*------------------*/
-/* estilo servicios */
-.estrella {
-  width: 40px;
-  height: 40px;
-}
-
-/*animación del ícono*/
+/*animación del ícono servicios*/
 .heartbeat {
   -webkit-animation: heartbeat 1s ease-in-out infinite both;
   animation: heartbeat 1s ease-in-out infinite both;
@@ -370,7 +95,320 @@
     animation-timing-function: ease-out;
   }
 }
-/*grilla con la descripción de los servicios*/
+/*animación de las imágenes galeria*/
+@media screen and (min-width: 1200px) {
+  .contenedorGaleria .filaGaleria {
+    /* escalo las imágenes*/
+  }
+  .contenedorGaleria .filaGaleria .prodUno:hover {
+    transform: scale(1.2, 1.2);
+    transition: all 2s;
+  }
+}
+* {
+  margin: 0;
+  list-style-type: none;
+  font-family: "Merriweather", serif;
+}
+
+/* index:html: color de fondo de la página */
+.contenido {
+  background-color: rgb(232, 232, 228);
+}
+
+.titulos .tituloDos {
+  font-family: "Merriweather", serif;
+  color: rgb(29, 16, 54);
+  text-shadow: 2px 2px rgb(167, 168, 170);
+  font-size: 18px;
+  text-align: center;
+  margin-top: 50px;
+}
+.titulos .subtitulo {
+  color: rgb(56, 37, 95);
+  text-shadow: 2px 2px rgb(167, 168, 170);
+  font-size: 16px;
+  text-align: center;
+}
+.titulos .agradece {
+  font-size: 14px;
+  text-align: left;
+  color: rgb(11, 91, 95);
+  margin-left: 50px;
+}
+
+.filaSubtitulo #prodLiving, .filaSubtitulo #prodComedor, .filaSubtitulo #prodOficina, .filaSubtitulo #prodAccesorio {
+  font-size: 14px;
+  color: rgb(11, 91, 95);
+  font-style: italic;
+  text-align: center;
+  padding: 10px;
+}
+
+.datos {
+  display: flex;
+  flex-direction: column;
+  font-family: "Quicksand", sans-serif;
+  font-size: 12px;
+  color: rgb(92, 52, 172);
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+/* modificación para desktop*/
+@media screen and (min-width: 1200px) {
+  /* estilo sobre nosotros */
+  .titulos .tituloDos {
+    font-size: 28px;
+    text-shadow: 3px 3px rgb(167, 168, 170);
+  }
+  .titulos .subtitulo {
+    font-size: 26px;
+    text-shadow: 3px 3px rgb(167, 168, 170);
+  }
+  .titulos .agradece {
+    font-size: 18px;
+    margin-left: 150px;
+  }
+  .filaSubtitulo #prodLiving, .filaSubtitulo #prodComedor, .filaSubtitulo #prodOficina, .filaSubtitulo #prodAccesorio {
+    font-size: 18px;
+  }
+  .datos {
+    display: flex;
+    flex-direction: row;
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+}
+/* estilo de la barra de navegación */
+.navbar {
+  background-color: rgb(174, 180, 169);
+}
+.navbar .logo {
+  width: 70%;
+  height: 70%;
+}
+.navbar .btn {
+  color: rgb(35, 15, 48);
+  background-color: #f8c49f;
+  padding: 2px;
+  font-size: 12px;
+}
+.navbar .btn:hover {
+  color: #80ed99;
+}
+.navbar .dropdown-menu {
+  width: 100px;
+}
+.navbar .dropdown-menu .dropdown-item {
+  color: rgb(35, 15, 48);
+  font-size: 12px;
+}
+.navbar .dropdown-menu .dropdown-item:hover {
+  background-color: #f8c49f;
+}
+
+/* modificación para desktop*/
+@media screen and (min-width: 1200px) {
+  /* responsive para desktop */
+  .navbar .logo {
+    width: 100%;
+    height: 100%;
+  }
+  .navbar .btn {
+    padding: 5px;
+    font-size: 16px;
+  }
+  .navbar .dropdown-menu {
+    width: 180px;
+  }
+  .navbar .dropdown-menu .dropdown-item {
+    font-size: 16px;
+  }
+}
+/* estilo del footer */
+.colorPie {
+  background-color: rgb(174, 180, 169);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.colorPie .copy, .colorPie .link-dark {
+  font-family: "Quicksand", sans-serif;
+  font-size: 14px;
+  color: rgb(56, 37, 95);
+}
+.colorPie .link-dark {
+  font-weight: bold;
+}
+.colorPie .tamLogo {
+  width: 20px;
+  height: 20px;
+  padding-left: 30px;
+}
+
+/* modificación para desktop*/
+@media screen and (min-width: 1200px) {
+  .colorPie {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .colorPie .copy, .colorPie .link-dark {
+    font-size: 16px;
+  }
+  .colorPie .tamLogo {
+    width: 40px;
+    height: 40px;
+    padding-left: 60px;
+  }
+}
+.contenedor .filaTitulo .titulo {
+  font-family: "Merriweather", serif;
+  color: rgb(29, 16, 54);
+  text-shadow: 2px 2px rgb(167, 168, 170);
+  font-size: 18px;
+}
+.contenedor .filaImagen .imagen {
+  z-index: 1;
+}
+.contenedor .filaImagen .estiloDes {
+  font-family: "Quicksand", sans-serif;
+  color: rgb(29, 16, 54);
+  text-shadow: 2px 2px rgb(167, 168, 170);
+  font-size: 16px;
+  z-index: 2;
+}
+.contenedor .filaOferta .ofertas {
+  font-family: "Quicksand", sans-serif;
+  font-size: 14px;
+  color: rgb(56, 37, 95);
+  margin-top: 50px;
+}
+.contenedor .filaCarousel .oferDes {
+  font-family: "Quicksand", sans-serif;
+  font-size: 12px;
+  color: rgb(220, 218, 224);
+  background-color: rgb(65, 63, 63);
+  padding: 0;
+}
+.contenedor .filaCompra {
+  font-family: "Quicksand", sans-serif;
+  font-size: 12px;
+  color: rgb(56, 37, 95);
+}
+.contenedor .filaCompra .tamIco {
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+}
+
+/* modificación para desktop*/
+@media screen and (min-width: 1200px) {
+  .contenedor .filaTitulo .titulo {
+    font-size: 28px;
+    text-shadow: 3px 3px rgb(167, 168, 170);
+  }
+  .contenedor .filaImagen .imagen {
+    width: 120%;
+    height: 100%;
+    margin-left: 100px;
+    padding: 20px;
+  }
+  .contenedor .filaImagen .estiloDes {
+    font-size: 26px;
+    text-shadow: 3px 3px rgb(167, 168, 170);
+  }
+  .contenedor .filaOferta .ofertas {
+    font-size: 18px;
+  }
+  .contenedor .filaCarousel .oferDes {
+    font-size: 16px;
+    padding-top: 10px;
+    padding-bottom: 0;
+  }
+  .contenedor .filaCompra {
+    font-size: 16px;
+  }
+  .contenedor .filaCompra .tamIco {
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+  }
+}
+.descriEm {
+  display: grid;
+  grid-template-areas: "historia" "imgEmUno" "imgEmDos" "imgEmTres" "imgEmCuatro";
+  grid-template-columns: 100%;
+  grid-template-rows: 200px 300px 300px 300px 300px;
+  padding: 5px;
+}
+.descriEm .historia {
+  grid-area: historia;
+  font-family: "Quicksand", sans-serif;
+  font-size: 12px;
+  color: rgb(92, 52, 172);
+  background-color: rgb(243, 243, 226);
+  border-bottom: 2px solid rgb(179, 179, 133);
+  padding: 20px;
+  border-radius: 10px;
+  margin-left: 20px;
+  padding: 20px;
+  width: 80%;
+  height: 180px;
+}
+.descriEm .imgEmUno {
+  grid-area: imgEmUno;
+}
+.descriEm .imgEmDos {
+  grid-area: imgEmDos;
+}
+.descriEm .imgEmTres {
+  grid-area: imgEmTres;
+}
+.descriEm .imgEmCuatro {
+  grid-area: imgEmCuatro;
+}
+.descriEm .imgEmUno, .descriEm .imgEmDos, .descriEm .imgEmTres, .descriEm .imgEmCuatro {
+  display: flex;
+  justify-content: center;
+}
+.descriEm .imgEmUno .imgTam, .descriEm .imgEmDos .imgTam, .descriEm .imgEmTres .imgTam, .descriEm .imgEmCuatro .imgTam {
+  width: 80%;
+  height: 80%;
+  border-bottom: 3px solid #7d807c;
+  border-radius: 15px;
+}
+
+/* modificación para desktop*/
+@media screen and (min-width: 1200px) {
+  .descriEm {
+    display: grid;
+    grid-template-areas: "historia imgEmUno imgEmDos" "historia imgEmTres imgEmCuatro";
+    grid-template-columns: 300px repeat(2, 450px);
+    grid-template-rows: repeat(2, 500px);
+    padding: 20px;
+    /* tamaño de las imágenes */
+  }
+  .descriEm .historia {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    border-radius: 20px;
+    margin: 15px;
+    width: 250px;
+    height: 380px;
+  }
+  .descriEm .imgEmUno, .descriEm .imgEmDos, .descriEm .imgEmTres, .descriEm .imgEmCuatro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  .descriEm .imgEmUno .imgTam, .descriEm .imgEmDos .imgTam, .descriEm .imgEmTres .imgTam, .descriEm .imgEmCuatro .imgTam {
+    border-bottom: 5px solid #7d807c;
+    border-radius: 20px;
+  }
+}
 .servicios {
   display: grid;
   grid-template-areas: "asesora" "calidad" "garantia";
@@ -379,66 +417,53 @@
   gap: 10px;
   margin: 20px;
 }
-
-.asesora {
+.servicios .asesora {
   grid-area: asesora;
   text-align: justify;
 }
-
-.calidad {
+.servicios .calidad {
   grid-area: calidad;
   text-align: justify;
 }
-
-.garantia {
+.servicios .garantia {
   grid-area: garantia;
   text-align: justify;
 }
-
-.asesora, .calidad, .garantia {
+.servicios .asesora, .servicios .calidad, .servicios .garantia {
   font-size: 12px;
   background-color: rgb(243, 243, 226);
   border-bottom: 2px solid rgb(179, 179, 133);
   border-radius: 10px;
   padding: 15px;
 }
-
-/*------------------------------*/
-/* estilo galería */
-/* formato subtítulos de Galería */
-#subtitulo {
-  font-size: 14px;
-  text-align: center;
-  color: rgb(92, 52, 172);
+.servicios .asesora .estrella, .servicios .calidad .estrella, .servicios .garantia .estrella {
+  width: 40px;
+  height: 40px;
 }
 
-.agradece {
-  font-size: 12px;
-  text-align: left;
-  color: rgb(11, 91, 95);
-  margin-left: 50px;
+/* modificación para desktop*/
+@media screen and (min-width: 1200px) {
+  .servicios {
+    display: grid;
+    grid-template-areas: "asesora asesora" "calidad garantia";
+    grid-template-columns: 400px 400px;
+    grid-template-rows: 300px 300px;
+    gap: 50px;
+    margin-top: 50px;
+    margin-left: 200px;
+    margin-bottom: 50px;
+  }
+  .servicios .asesora, .servicios .calidad, .servicios .garantia {
+    font-size: 16px;
+    border-bottom: 5px solid rgb(179, 179, 133);
+    border-radius: 20px;
+    padding: 25px;
+  }
+  .servicios .asesora .estrella, .servicios .calidad .estrella, .servicios .garantia .estrella {
+    width: 50px;
+    height: 50px;
+  }
 }
-
-/* defino tamaño de las imágenes*/
-.galTamUno {
-  width: 90%;
-  height: 90%;
-  border-radius: 10px;
-  border-bottom: 5px solid rgb(180, 180, 178);
-  border-right: 5px solid rgb(180, 180, 178);
-  padding: 10px;
-}
-
-/*-----------------*/
-/* estilo contacto */
-/* formato del subtítulo */
-#subConsulta {
-  color: rgb(92, 52, 172);
-  font-size: 12px;
-  margin-left: 20px;
-  padding: 10px;
-}
-
 /* estilo del formulario contenedor*/
 .formulario {
   display: grid;
@@ -455,220 +480,44 @@
   color: rgb(92, 52, 172);
   font-size: 10px;
 }
-
-.forNombre {
+.formulario .forNombre {
   grid-area: forNombre;
   margin-left: 35px;
 }
-
-.forProvincia {
+.formulario .forProvincia {
   grid-area: forProvincia;
   margin-left: 35px;
 }
-
-.ciudad {
+.formulario .ciudad {
   grid-area: ciudad;
   margin-left: 35px;
 }
-
-.domicilio {
+.formulario .domicilio {
   grid-area: domicilio;
   margin-left: 35px;
 }
-
-.ubicacion {
+.formulario .ubicacion {
   grid-area: ubicacion;
   margin-left: 35px;
 }
-
-.cliente {
+.formulario .cliente {
   grid-area: cliente;
   margin-left: 35px;
 }
-
-.inquietud {
+.formulario .inquietud {
   grid-area: inquietud;
   margin-left: 35px;
 }
-
-#consulta {
+.formulario #consulta {
   width: 200px;
   height: 150px;
 }
-
-.botones {
+.formulario .botones {
   grid-area: botones;
   margin-left: 100px;
 }
 
-.datos {
-  display: flex;
-  flex-direction: column;
-  font-family: "Quicksand", sans-serif;
-  font-size: 10px;
-  color: rgb(29, 16, 54);
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 15px;
-}
-
-/*-------------------------*/
-/* estilo links de interés */
-/* estilo del subtítulo */
-#linkEstilo {
-  font-size: 14px;
-  margin-left: 20px;
-  margin-bottom: 10px;
-  color: rgb(92, 52, 172);
-}
-
-/* tamaño de los logos de las empresas*/
-.logoTam {
-  width: 10vw;
-  height: 10vh;
-}
-
-/* disposición de la información en filas */
-.interes {
-  display: grid;
-  grid-template-areas: "logoEm nombreEm" "infoEm infoEm";
-  grid-template-columns: 150px auto;
-  grid-template-rows: 100px 100px;
-  align-items: center;
-  margin: 30px;
-  padding: 10px;
-  font-size: 10px;
-  color: rgb(92, 52, 172);
-  background-color: rgb(243, 243, 226);
-  border-bottom: 2px solid rgb(179, 179, 133);
-  border-radius: 10px;
-}
-
-.logoEm {
-  grid-area: logoEm;
-  display: flex;
-  justify-content: center;
-}
-
-.nombreEm {
-  grid-area: nombreEm;
-}
-
-.infoEm {
-  grid-area: infoEm;
-}
-
-/*--------------------------*/
-/* modificación para desktop*/
 @media screen and (min-width: 1200px) {
-  /* estilo sobre nosotros */
-  .tituloDos {
-    font-size: 28px;
-  }
-  .subSobreNos {
-    font-size: 22px;
-    margin-left: 50px;
-  }
-  .descriEm {
-    display: grid;
-    grid-template-areas: "historia imgEmUno imgEmDos" "historia imgEmTres imgEmCuatro";
-    grid-template-columns: 300px repeat(2, 450px);
-    grid-template-rows: repeat(2, 500px);
-    padding: 20px;
-  }
-  .historia {
-    font-size: 16px;
-    padding: 20px;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    margin: 15px;
-    height: 380px;
-    width: 250px;
-  }
-  /* tamaño de las imágenes */
-  .imgEmUno, .imgEmDos, .imgEmTres, .imgEmCuatro {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 15px;
-  }
-  .imgTam {
-    width: 80%;
-    height: 80%;
-    border-bottom: 5px solid #7d807c;
-    border-radius: 20px;
-  }
-  /*-------------------*/
-  /* estilo productos */
-  #tituloProd, #tituloServ {
-    font-size: 20px;
-  }
-  #prodLiving, #prodComedor, #prodOficina, #prodAccesorio {
-    font-size: 18px;
-    padding: 20px;
-  }
-  .card-title {
-    font-size: 18px;
-  }
-  .list-group-item {
-    font-size: 16px;
-  }
-  /*------------------*/
-  /* estilo servicios */
-  .estrella {
-    width: 50px;
-    height: 50px;
-  }
-  .servicios {
-    display: grid;
-    grid-template-areas: "asesora asesora" "calidad garantia";
-    grid-template-columns: 400px 400px;
-    grid-template-rows: 300px 300px;
-    gap: 50px;
-    margin-top: 50px;
-    margin-left: 200px;
-    margin-bottom: 50px;
-  }
-  .asesora, .calidad, .garantia {
-    font-size: 16px;
-    border-bottom: 5px solid rgb(179, 179, 133);
-    border-radius: 20px;
-    padding: 25px;
-  }
-  /* estilo galería */
-  /* formato subtítulo de Galería y Links de interés */
-  #subtitulo {
-    font-size: 18px;
-  }
-  .agradece {
-    font-size: 16px;
-    margin-left: 150px;
-  }
-  /* escalo las imágenes*/
-  .prodUno:hover {
-    transform: scale(1.2, 1.2);
-    transition: all 2s;
-  }
-  /* defino tamaño de las imágenes*/
-  .galTamUno {
-    width: 90%;
-    height: 90%;
-    border-radius: 10px;
-    border-bottom: 5px solid rgb(180, 180, 178);
-    border-right: 5px solid rgb(180, 180, 178);
-    gap: 30px;
-    margin-bottom: 10px;
-  }
-  /*-----------------*/
-  /* estilo contacto */
-  /* formato del subtítulo */
-  #subConsulta {
-    font-size: 18px;
-    margin-left: 150px;
-    padding: 20px;
-  }
-  /* estilo del formulario contenedor*/
   .formulario {
     display: grid;
     grid-template-areas: "forNombre forNombre forNombre" "forProvincia ciudad domicilio" "ubicacion cliente cliente" "inquietud inquietud inquietud" "botones botones botones";
@@ -682,32 +531,97 @@
     border-radius: 20px;
     font-size: 14px;
   }
-  #consulta {
+  .formulario #consulta {
     width: 100%;
     height: 80px;
   }
-  .botones {
+  .formulario .botones {
     margin-left: 550px;
   }
-  .datos {
-    display: flex;
-    flex-direction: row;
-    font-size: 16px;
-    margin-bottom: 25px;
+}
+/*productos.html*/
+/*estilo de las cards*/
+.contenedorProd {
+  /*link para ir al inicio de la página*/
+}
+.contenedorProd .filaCard .card .card-body .card-title {
+  font-size: 14px;
+}
+.contenedorProd .filaCard .card .list-group .list-group-item {
+  font-size: 12px;
+}
+.contenedorProd .filaInicio .iniPagina {
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+}
+
+/* modificación para desktop*/
+@media screen and (min-width: 1200px) {
+  .contenedorProd {
+    /*link para ir al inicio de la página*/
   }
-  /*--------------------------*/
-  /* estilo links de interés */
-  /* estilo del subtítulo */
-  #linkEstilo {
+  .contenedorProd .filaCard .card .card-body .card-title {
     font-size: 18px;
-    margin-left: 50px;
-    margin-bottom: 20px;
   }
+  .contenedorProd .filaCard .card .list-group .list-group-item {
+    font-size: 16px;
+  }
+  .contenedorProd .filaInicio .iniPagina {
+    font-size: 16px;
+  }
+}
+/* estilo galería */
+/* defino tamaño de las imágenes*/
+.contenedorGaleria .filaGaleria .prodUno .galTamUno {
+  width: 90%;
+  height: 90%;
+  border-radius: 10px;
+  border-bottom: 5px solid rgb(180, 180, 178);
+  border-right: 5px solid rgb(180, 180, 178);
+  padding: 10px;
+}
+
+@media screen and (min-width: 1200px) {
+  .contenedorGaleria .filaGaleria .prodUno .galTamUno {
+    gap: 30px;
+    margin-bottom: 10px;
+  }
+}
+/* estilo links de interés */
+.interes {
+  display: grid;
+  grid-template-areas: "logoEm nombreEm" "infoEm infoEm";
+  grid-template-columns: 150px auto;
+  grid-template-rows: 100px 100px;
+  align-items: center;
+  margin: 30px;
+  padding: 10px;
+  font-size: 12px;
+  color: rgb(92, 52, 172);
+  background-color: rgb(243, 243, 226);
+  border-bottom: 2px solid rgb(179, 179, 133);
+  border-radius: 10px;
+}
+.interes .logoEm {
+  grid-area: logoEm;
+  display: flex;
+  justify-content: center;
   /* tamaño de los logos de las empresas*/
-  .logoTam {
-    width: 20vw;
-    height: 20vh;
-  }
+}
+.interes .logoEm .logoTam {
+  width: 10vw;
+  height: 10vh;
+}
+.interes .nombreEm {
+  grid-area: nombreEm;
+}
+.interes .infoEm {
+  grid-area: infoEm;
+}
+
+/* modificación para desktop*/
+@media screen and (min-width: 1200px) {
   /* disposición de la información en filas */
   .interes {
     display: grid;
@@ -717,10 +631,14 @@
     margin: 50px;
     padding: 20px;
     font-size: 14px;
-    border-bottom: 5px solid rgb(113, 129, 113);
+    border-bottom: 5px solid rgb(179, 179, 133);
     border-radius: 15px;
   }
-  .logoEm, .nombreEm, .infoEm {
+  .interes .logoEm, .interes .nombreEm, .interes .infoEm {
     margin-left: 100px;
+  }
+  .interes .logoEm .logoTam {
+    width: 20vw;
+    height: 20vh;
   }
 }/*# sourceMappingURL=styles.css.map */

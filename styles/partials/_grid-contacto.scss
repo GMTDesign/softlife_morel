@@ -1,0 +1,87 @@
+/* estilo del formulario contenedor*/
+.formulario{
+    display:grid;
+    grid-template-areas: 
+    "forNombre"
+    "forProvincia"
+    "ciudad"
+    "domicilio"
+    "ubicacion"
+    "cliente"
+    "inquietud"
+    "botones";
+    grid-template-columns: 320px;
+    grid-template-rows: repeat(6, 50px) 180px 50px;
+    margin-left: 20px;
+    margin-bottom: 05px;
+    padding: 05px;
+    width: 320px;
+    background-color: rgb(243, 243, 226);
+    border-bottom: 02px solid rgb(179, 179, 133);
+    border-radius: 10px;
+    color: $font-fill-color;
+    font-size: 10px;
+    .forNombre{
+        grid-area: forNombre;
+        margin-left: 35px;
+    }
+    .forProvincia{
+        grid-area: forProvincia;
+        margin-left: 35px;    
+    }
+    .ciudad{
+        grid-area: ciudad;
+        margin-left: 35px;
+    }
+    .domicilio{
+        grid-area: domicilio;
+        margin-left: 35px;
+    }
+    .ubicacion{
+        grid-area: ubicacion;
+        margin-left: 35px;
+    }
+    .cliente{
+        grid-area: cliente;
+        margin-left: 35px;
+    }
+    .inquietud{
+        grid-area: inquietud;
+        margin-left: 35px;
+    }
+    #consulta{
+        width: 200px;
+        height: 150px;
+    }
+    .botones{
+        grid-area: botones;
+        margin-left: 100px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .formulario{
+        display:grid;
+        grid-template-areas: 
+        "forNombre forNombre forNombre"
+        "forProvincia ciudad domicilio"
+        "ubicacion cliente cliente"
+        "inquietud inquietud inquietud"
+        "botones botones botones";
+        grid-template-columns: 250px 250px 300px;
+        grid-template-rows: repeat(3, 50px) 170px 50px;
+        margin-left: 150px;
+        margin-bottom: 150px;
+        padding: 25px;
+        width: 850px;
+        border-bottom: 03px solid rgb(113, 129, 113);
+        border-radius: 20px;
+        font-size: 14px;
+        #consulta{
+            width: 100%;
+            height: 80px;
+        }
+        .botones{
+            margin-left: 550px;
+        }
+    }
+}    

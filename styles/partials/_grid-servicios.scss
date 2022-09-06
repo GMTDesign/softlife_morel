@@ -1,0 +1,60 @@
+// servicios.html: grilla (descripción de los servicios)
+.servicios{
+    display: grid;
+    grid-template-areas: 
+    "asesora"
+    "calidad"
+    "garantia";
+    grid-template-columns: 100%;
+    grid-template-rows: 320px 180px 250px;
+    gap: 10px;
+    margin: 20px;
+    .asesora{
+        grid-area: asesora;
+        text-align: justify;
+    }
+    .calidad{
+        grid-area: calidad;
+        text-align: justify;
+    }
+    .garantia{
+        grid-area: garantia;
+        text-align: justify;
+    }
+    .asesora, .calidad, .garantia{
+        font-size: $size-textoUno;
+        background-color: $grid-bg-color;
+        border-bottom: $grid-borderB;
+        border-radius: 10px;
+        padding: 15px;
+        .estrella{
+            width: $estrella-width-sm;
+            height: $estrella-height-sm;
+        }
+    }
+}
+/* modificación para desktop*/
+@media screen and (min-width: 1200px) {
+    .servicios{
+        display: grid;
+        grid-template-areas: 
+        "asesora asesora"
+        "calidad garantia";
+        grid-template-columns: 400px 400px;
+        grid-template-rows: 300px 300px;
+        gap: 50px;
+        margin-top: 50px;
+        margin-left: 200px;
+        margin-bottom: 50px;
+        .asesora, .calidad, .garantia{
+            font-size: $size-textoTres;
+            border-bottom: $grid-borderB-xl;
+            border-radius: 20px;
+            padding: 25px;
+            .estrella{
+                width: $estrella-width-xl;
+                height: $estrella-height-xl;
+            }
+        }
+    }
+}    

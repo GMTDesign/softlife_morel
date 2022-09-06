@@ -1,0 +1,74 @@
+//estilos de título y subtítulo: 'sobre nosotros', 'productos', 
+//-------------------------------'servicios', 'galería' y 'contacto'
+.titulos{
+    .tituloDos{
+        font-family: $primary-font;
+        color: $font-primary-color;
+        text-shadow: $shadow-color-sm;
+        font-size: $size-titulo-sm;
+        text-align: center;
+        margin-top: 50px;
+    }
+    .subtitulo{
+        color: $font-secondary-color;
+        text-shadow: $shadow-color-sm;
+        font-size: $size-subtitulo-sm;
+        text-align: center;
+    }
+    .agradece{
+        font-size: $size-textoDos;
+        text-align: left;
+        color: $font-subtitulo-color;
+        margin-left: 50px;
+    }
+}
+// productos.html: subtítulos por tipo de producto
+.filaSubtitulo{
+    #prodLiving, #prodComedor, #prodOficina, #prodAccesorio{
+        font-size: $size-textoDos;
+        color: $font-subtitulo-color;
+        font-style: italic;
+        text-align: center;
+        padding: 10px;
+    }
+}
+// sobre-nosotros.html y contacto.html: datos de contacto
+.datos{
+    display:flex;
+    flex-direction: column;
+    font-family: $secondary-font;
+    font-size: $size-textoUno;
+    color: $font-fill-color;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+/* modificación para desktop*/
+@media screen and (min-width: 1200px) {
+    /* estilo sobre nosotros */
+    .titulos{
+        .tituloDos{
+            font-size: $size-titulo-xl;
+            text-shadow: $shadow-color-xl;
+        }
+        .subtitulo{
+            font-size: $size-subtitulo-xl;
+            text-shadow: $shadow-color-xl;
+        }
+        .agradece{
+            font-size: $size-textoCuatro;
+            margin-left: 150px;
+        }
+    }
+    .filaSubtitulo{
+        #prodLiving, #prodComedor, #prodOficina, #prodAccesorio{
+            font-size: $size-textoCuatro;
+        }
+    }    
+    .datos{
+        display:flex;
+        flex-direction: row;
+        font-size: $size-textoTres;
+        margin-bottom: 25px;
+    }
+}    

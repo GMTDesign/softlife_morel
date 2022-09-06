@@ -1,0 +1,52 @@
+/*productos.html*/
+/*estilo de las cards*/
+.contenedorProd{
+    .filaCard{
+        .card{
+            .card-body{
+                .card-title{
+                    font-size: $size-textoDos;
+                }
+            }  
+            .list-group{
+                .list-group-item{
+                    font-size: $size-textoUno;
+                }
+            }  
+        }
+    }
+    /*link para ir al inicio de la página*/
+    .filaInicio{
+        .iniPagina{
+            font-size: $size-textoUno;
+            display:flex;
+            justify-content: center;
+        }
+    }
+}
+/* modificación para desktop*/
+@media screen and (min-width: 1200px) {
+    .contenedorProd{
+        .filaCard{
+            .card{
+                .card-body{
+                    .card-title{
+                        font-size: $size-textoCuatro;
+                    }
+                }  
+                .list-group{
+                    .list-group-item{
+                        font-size: $size-textoTres;
+                    }
+                }  
+            }
+        }
+        /*link para ir al inicio de la página*/
+        .filaInicio{
+            .iniPagina{
+                font-size: $size-textoTres;
+            }
+        }
+    }
+
+}

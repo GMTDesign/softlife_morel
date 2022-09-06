@@ -1,0 +1,28 @@
+/* estilo galería */
+/* defino tamaño de las imágenes*/
+.contenedorGaleria{
+    .filaGaleria{
+        .prodUno{
+            .galTamUno{
+                width: $imgGaleria-width-sm;
+                height: $imgGaleria-height-sm;
+                border-radius: 10px;
+                border-bottom: 05px solid rgb(180, 180, 178);
+                border-right: 05px solid rgb(180, 180, 178);
+                padding: 10px;
+            }
+        }
+    }
+}
+@media screen and (min-width: 1200px) {
+    .contenedorGaleria{
+        .filaGaleria{
+            .prodUno{
+                .galTamUno{
+                    gap: 30px;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}    

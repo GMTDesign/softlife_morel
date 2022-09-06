@@ -3,11 +3,20 @@ $nav-bg-color: rgb(174, 180, 169);
 $boton-color: rgb(35, 15, 48);
 $boton-bg-color: #f8c49f;
 $botonHover-color: #80ed99;
-$font-primary-color: rgb(56, 37, 95);
-$font-secondary-color: rgb(29, 16, 54);
+// colores de fuentes
+$font-primary-color: rgb(29, 16, 54);
+$font-secondary-color: rgb(56, 37, 95);
+$font-fill-color: rgb(92, 52, 172);
+$font-subtitulo-color: rgb(11, 91, 95);
 $font-third-color: rgb(220, 218, 224);
 //shadow-color incluye el tamaño
 $shadow-color-sm: 2px 2px rgb(167, 168, 170);
 $shadow-color-xl: 3px 3px rgb(167, 168, 170);
 //--------------------------------------------
 $ofer-bg-color: rgb(65, 63, 63) ; 
+//estilo grids
+$grid-bg-color: rgb(243, 243, 226);
+$grid-borderB: 02px solid rgb(179, 179, 133);
+$grid-borderB-xl: 05px solid rgb(179, 179, 133);
+$grid-imgBorder-sm: 03px solid #7d807c;
+$grid-imgBorder-xl: 05px solid #7d807c;
