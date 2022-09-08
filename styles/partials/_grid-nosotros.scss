@@ -14,13 +14,10 @@
         grid-area: historia;
         font-family: $secondary-font;
         font-size: $size-textoUno;
-        color:$font-fill-color;
-        background-color: $grid-bg-color;
-        border-bottom: $grid-borderB;
-        padding: 20px;
-        border-radius: 10px;
-        margin-left: 20px;
-        padding: 20px;
+        @extend %grillaBase;
+        padding: map-get($estilos, diez);
+        border-radius: map-get($estilos, diez);
+        margin-left: map-get($estilos, cuarenta);
         width: $historia-width-sm;
         height: $historia-height-sm;
     }
@@ -44,7 +41,7 @@
             width: $imgNosotros-width-sm;
             height: $imgNosotros-height-sm;
             border-bottom: $grid-imgBorder-sm; 
-            border-radius: 15px;
+            border-radius: map-get($estilos, quince);
         }
     }
 }
@@ -57,13 +54,15 @@
         "historia imgEmTres imgEmCuatro";
         grid-template-columns: 300px repeat(2, 450px);
         grid-template-rows: repeat(2, 500px);
-        padding: 20px;
+        padding: map-get($estilos, veinte);
         .historia{
             display:flex;
             flex-direction: column;
             font-size: $size-textoTres;
-            border-radius: 20px;
-            margin: 15px;
+            padding: map-get($estilos, veinte);
+            border-radius: map-get($estilos, veinte);
+            border-bottom: $grid-borderB-xl;
+            margin: map-get($estilos, quince);
             width: $historia-width-xl;
             height: $historia-height-xl;
         }
@@ -72,10 +71,10 @@
             display:flex;
             justify-content: center;
             align-items: center;
-            margin-bottom: 15px;
+            margin-bottom: map-get($estilos, quince);
             .imgTam{
                 border-bottom: $grid-imgBorder-xl; 
-                border-radius: 20px;
+                border-radius: map-get($estilos, veinte);
             }
         }
     }

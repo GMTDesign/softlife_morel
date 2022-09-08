@@ -6,8 +6,7 @@
         height: $logo-height-sm;
     }
     .btn{
-        color: $boton-color;
-        background-color: $boton-bg-color; 
+        @include btnColor($boton-color: rgb(35, 15, 48), $boton-bg-color: #f8c49f);
         padding: 02px;
         font-size: $size-textoUno;
         &:hover{
@@ -17,7 +16,7 @@
     .dropdown-menu{
         width: 100px;
         .dropdown-item{
-            color: $boton-color;
+            @include btnColor($boton-color: rgb(35, 15, 48), $boton-bg-color: #f8f6f5);
             font-size: $size-textoUno;
             &:hover{
                 background-color: $boton-bg-color;

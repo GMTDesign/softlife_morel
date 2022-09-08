@@ -1,0 +1,18 @@
+// aplicado en header.scss
+@mixin btnColor($boton-color, $boton-bg-color) {
+    color: $boton-color;
+    background-color: $boton-bg-color; 
+}
+@mixin tituloPrincipal($primary-font, $principal:true){
+    font-family: $primary-font;
+    text-shadow: $shadow-color-sm;
+    text-align: center;   
+    @if ($principal){
+        color: $font-primary-color;
+        font-size: $size-titulo-sm;
+        margin-top: 50px;
+    } @else{
+        color: $font-secondary-color;
+        font-size: $size-subtitulo-sm;
+    }
+}

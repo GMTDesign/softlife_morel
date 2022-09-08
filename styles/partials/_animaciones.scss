@@ -106,13 +106,9 @@
 }
 /*animación de las imágenes galeria*/
 @media screen and (min-width: 1200px) {
-    .contenedorGaleria{
-        .filaGaleria{
-            /* escalo las imágenes*/
-            .prodUno:hover{
-                transform: scale(1.2, 1.2);
-                transition: all 2s;
-            }
-        }
+    /* escalo las imágenes*/
+    .prodUno:hover{
+        transform: scale(1.2, 1.2);
+        transition: all 2s;
     }
 }    

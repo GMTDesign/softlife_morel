@@ -2,18 +2,20 @@
 //-------------------------------'servicios', 'galería' y 'contacto'
 .titulos{
     .tituloDos{
-        font-family: $primary-font;
+        /* font-family: $primary-font;
         color: $font-primary-color;
         text-shadow: $shadow-color-sm;
         font-size: $size-titulo-sm;
         text-align: center;
-        margin-top: 50px;
+        margin-top: 50px;*/
+        @include tituloPrincipal($primary-font: 'Merriweather', $principal: true);
     }
     .subtitulo{
-        color: $font-secondary-color;
+        /*color: $font-secondary-color;
         text-shadow: $shadow-color-sm;
         font-size: $size-subtitulo-sm;
-        text-align: center;
+        text-align: center;*/
+        @include tituloPrincipal($primary-font: 'Merriweather', $principal:false);
     }
     .agradece{
         font-size: $size-textoDos;

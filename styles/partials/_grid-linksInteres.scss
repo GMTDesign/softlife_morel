@@ -6,14 +6,13 @@
     "infoEm infoEm";
     grid-template-columns: 150px auto;
     grid-template-rows: 100px 100px;
-    align-items: center;
-    margin: 30px;
-    padding: 10px;
+    font-family: $secondary-font;
     font-size: $size-textoUno;
-    color: $font-fill-color;
-    background-color: $grid-bg-color;
-    border-bottom: $grid-borderB;
-    border-radius: 10px;
+    @extend %grillaBase;
+    padding: map-get($estilos, diez);
+    border-radius: map-get($estilos, diez);
+    margin: map-get($estilos, treinta);
+    align-items: center;
     .logoEm{
         grid-area: logoEm; 
         display:flex;
@@ -40,11 +39,11 @@
             "logoEm nombreEm infoEm";
             grid-template-columns: 150px 200px 300px;
             grid-template-rows: 100%;
-            margin: 50px;
-            padding: 20px;
+            margin: map-get($estilos, cincuenta);
+            padding: map-get($estilos, veinte);
             font-size: $size-textoDos;
             border-bottom: $grid-borderB-xl;
-            border-radius: 15px;
+            border-radius: map-get($estilos, veinte);
             .logoEm, .nombreEm, .infoEm{
                 margin-left: 100px;
             }
