@@ -1,5 +1,4 @@
 @charset "UTF-8";
-/*animación imagen principal de index.html*/
 .fade-in {
   -webkit-animation: fade-in 5s steps(10, end) both;
   animation: fade-in 5s steps(10, end) both;
@@ -29,7 +28,6 @@
     opacity: 1;
   }
 }
-/*animación del ícono servicios*/
 .heartbeat {
   -webkit-animation: heartbeat 1s ease-in-out infinite both;
   animation: heartbeat 1s ease-in-out infinite both;
@@ -115,18 +113,11 @@
   font-family: "Merriweather", serif;
 }
 
-/* index:html: color de fondo de la página */
 .contenido {
   background-color: rgb(232, 232, 228);
 }
 
 .titulos .tituloDos {
-  /* font-family: $primary-font;
-  color: $font-primary-color;
-  text-shadow: $shadow-color-sm;
-  font-size: $size-titulo-sm;
-  text-align: center;
-  margin-top: 50px;*/
   font-family: "Merriweather";
   text-shadow: 2px 2px rgb(167, 168, 170);
   text-align: center;
@@ -135,10 +126,6 @@
   margin-top: 50px;
 }
 .titulos .subtitulo {
-  /*color: $font-secondary-color;
-  text-shadow: $shadow-color-sm;
-  font-size: $size-subtitulo-sm;
-  text-align: center;*/
   font-family: "Merriweather";
   text-shadow: 2px 2px rgb(167, 168, 170);
   text-align: center;
@@ -591,6 +578,7 @@
   padding: 10px;
 }
 
+/* modificación para desktop*/
 @media screen and (min-width: 1200px) {
   .contenedorGaleria .filaGaleria .prodUno .galTamUno {
     gap: 30px;

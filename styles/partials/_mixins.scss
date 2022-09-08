@@ -3,6 +3,7 @@
     color: $boton-color;
     background-color: $boton-bg-color; 
 }
+// aplicado en titulos-datos.scss
 @mixin tituloPrincipal($primary-font, $principal:true){
     font-family: $primary-font;
     text-shadow: $shadow-color-sm;
