@@ -7,8 +7,8 @@
                 width: $imgGaleria-width-sm;
                 height: $imgGaleria-height-sm;
                 border-radius: 10px;
-                border-bottom: 05px solid rgb(180, 180, 178);
-                border-right: 05px solid rgb(180, 180, 178);
+                border-bottom: $imgGaleria-border;
+                border-right: $imgGaleria-border;
                 padding: 10px;
             }
         }

@@ -9,15 +9,15 @@
     "imgEmCuatro";
     grid-template-columns: 100%;
     grid-template-rows: 200px 300px 300px 300px 300px;
-    padding: 05px;
+    padding: map-get($estilos, c-05px);
     .historia{
         grid-area: historia;
         font-family: $secondary-font;
         font-size: $size-textoUno;
         @extend %grillaBase;
-        padding: map-get($estilos, diez);
-        border-radius: map-get($estilos, diez);
-        margin-left: map-get($estilos, cuarenta);
+        padding: map-get($estilos, d-10px);
+        border-radius: map-get($estilos, d-10px);
+        margin-left: map-get($estilos, c-50px);
         width: $historia-width-sm;
         height: $historia-height-sm;
     }
@@ -41,7 +41,7 @@
             width: $imgNosotros-width-sm;
             height: $imgNosotros-height-sm;
             border-bottom: $grid-imgBorder-sm; 
-            border-radius: map-get($estilos, quince);
+            border-radius: map-get($estilos, q-15px);
         }
     }
 }
@@ -54,15 +54,15 @@
         "historia imgEmTres imgEmCuatro";
         grid-template-columns: 300px repeat(2, 450px);
         grid-template-rows: repeat(2, 500px);
-        padding: map-get($estilos, veinte);
+        padding: map-get($estilos, v-20px);
         .historia{
             display:flex;
             flex-direction: column;
             font-size: $size-textoTres;
-            padding: map-get($estilos, veinte);
-            border-radius: map-get($estilos, veinte);
+            padding: map-get($estilos, v-20px);
+            border-radius: map-get($estilos, v-20px);
             border-bottom: $grid-borderB-xl;
-            margin: map-get($estilos, quince);
+            margin: map-get($estilos, q-15px);
             width: $historia-width-xl;
             height: $historia-height-xl;
         }
@@ -71,10 +71,10 @@
             display:flex;
             justify-content: center;
             align-items: center;
-            margin-bottom: map-get($estilos, quince);
+            margin-bottom: map-get($estilos, q-15px);
             .imgTam{
                 border-bottom: $grid-imgBorder-xl; 
-                border-radius: map-get($estilos, veinte);
+                border-radius: map-get($estilos, v-20px);
             }
         }
     }

@@ -157,6 +157,11 @@
   align-items: center;
   margin-bottom: 15px;
 }
+.datos .tamIco {
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+}
 
 /* modificación para desktop*/
 @media screen and (min-width: 1200px) {
@@ -182,6 +187,11 @@
     font-size: 16px;
     margin-bottom: 25px;
   }
+  .datos .tamIco {
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+  }
 }
 /* estilo de la barra de navegación */
 .navbar {
@@ -198,7 +208,8 @@
   font-size: 12px;
 }
 .navbar .btn:hover {
-  color: #80ed99;
+  color: #5556a5;
+  background-color: rgb(255, 235, 205);
 }
 .navbar .dropdown-menu {
   width: 100px;
@@ -209,7 +220,8 @@
   font-size: 12px;
 }
 .navbar .dropdown-menu .dropdown-item:hover {
-  background-color: #f8c49f;
+  color: #5556a5;
+  background-color: rgb(255, 235, 205);
 }
 
 /* modificación para desktop*/
@@ -324,6 +336,9 @@
   .contenedor .filaOferta .ofertas {
     font-size: 18px;
   }
+  .contenedor .filaCarousel .carouselMargin-xl {
+    margin-left: 400px;
+  }
   .contenedor .filaCarousel .oferDes {
     font-size: 16px;
     padding-top: 10px;
@@ -351,7 +366,7 @@
   font-size: 12px;
   padding: 10px;
   border-radius: 10px;
-  margin-left: 40px;
+  margin-left: 50px;
   width: 300px;
   height: 150px;
 }
@@ -414,7 +429,7 @@
   display: grid;
   grid-template-areas: "asesora" "calidad" "garantia";
   grid-template-columns: 100%;
-  grid-template-rows: 320px 180px 250px;
+  grid-template-rows: 240px 150px 180px;
   gap: 10px;
   margin: 20px;
 }
@@ -446,7 +461,7 @@
     display: grid;
     grid-template-areas: "asesora asesora" "calidad garantia";
     grid-template-columns: 400px 400px;
-    grid-template-rows: 300px 300px;
+    grid-template-rows: 230px 260px;
     gap: 50px;
     margin-top: 50px;
     margin-left: 200px;
@@ -526,7 +541,7 @@
     margin-bottom: 150px;
     padding: 25px;
     width: 850px;
-    border-bottom: 3px solid rgb(113, 129, 113);
+    border-bottom: 5px solid rgb(179, 179, 133);
     border-radius: 20px;
     font-size: 14px;
   }

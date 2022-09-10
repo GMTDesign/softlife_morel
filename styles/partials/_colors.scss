@@ -1,7 +1,8 @@
 $bg-color: rgb(232, 232, 228);
 $nav-bg-color: rgb(174, 180, 169);
 $boton-bg-color: #f8c49f;
-$botonHover-color: #80ed99;
+$botonHover-color: #5556a5;
+$botonHover-bgColor: rgb(255, 235, 205);
 // colores de fuentes
 $font-primary-color: rgb(29, 16, 54);
 $font-secondary-color: rgb(56, 37, 95);
@@ -15,7 +16,10 @@ $shadow-color-xl: 3px 3px rgb(167, 168, 170);
 $ofer-bg-color: rgb(65, 63, 63) ; 
 //estilo grids
 $grid-bg-color: rgb(243, 243, 226);
+//border e imgBorder incluye el tamaño 
 $grid-borderB: 02px solid rgb(179, 179, 133);
 $grid-borderB-xl: 05px solid rgb(179, 179, 133);
 $grid-imgBorder-sm: 03px solid #7d807c;
 $grid-imgBorder-xl: 05px solid #7d807c;
+// bordes imágenes galería
+$imgGaleria-border: 05px solid rgb(180, 180, 178);

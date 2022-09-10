@@ -11,6 +11,7 @@
         font-size: $size-textoUno;
         &:hover{
             color: $botonHover-color;
+            background-color: $botonHover-bgColor;
         }
     }
     .dropdown-menu{
@@ -19,7 +20,8 @@
             @include btnColor($boton-color: rgb(35, 15, 48), $boton-bg-color: #f8f6f5);
             font-size: $size-textoUno;
             &:hover{
-                background-color: $boton-bg-color;
+                color: $botonHover-color;
+                background-color: $botonHover-bgColor;    
             }
         }
     }

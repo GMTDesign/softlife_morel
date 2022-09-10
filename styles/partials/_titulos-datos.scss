@@ -24,7 +24,7 @@
         padding: 10px;
     }
 }
-// sobre-nosotros.html y contacto.html: datos de contacto
+// datos de contacto: en todas las páginas
 .datos{
     display:flex;
     flex-direction: column;
@@ -34,6 +34,11 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 15px;
+    .tamIco{
+        width: $icono-width-sm;
+        height: $icono-height-sm;
+        padding: 10px;    
+    }    
 }
 /* modificación para desktop*/
 @media screen and (min-width: 1200px) {
@@ -62,5 +67,10 @@
         flex-direction: row;
         font-size: $size-textoTres;
         margin-bottom: 25px;
-    }
+        .tamIco{
+            width: $icono-width-xl;
+            height: $icono-height-xl;
+            padding: 20px;
+        }
+    }        
 }    

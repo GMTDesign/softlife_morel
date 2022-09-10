@@ -16,8 +16,8 @@
     margin-bottom: 05px;
     padding: 05px;
     width: 320px;
-    background-color: rgb(243, 243, 226);
-    border-bottom: 02px solid rgb(179, 179, 133);
+    background-color: $grid-bg-color;
+    border-bottom: $grid-borderB;
     border-radius: 10px;
     color: $font-fill-color;
     font-size: 10px;
@@ -73,7 +73,7 @@
         margin-bottom: 150px;
         padding: 25px;
         width: 850px;
-        border-bottom: 03px solid rgb(113, 129, 113);
+        border-bottom: $grid-borderB-xl;
         border-radius: 20px;
         font-size: 14px;
         #consulta{
