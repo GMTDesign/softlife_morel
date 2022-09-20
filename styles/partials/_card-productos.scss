@@ -2,6 +2,10 @@
 /*estilo de las cards*/
 .filaCard{
     .card{
+        .card-img{
+            width: 100%;
+            height: 100%;
+        }
         .card-body{
             .card-title{
                 font-size: $size-textoDos;

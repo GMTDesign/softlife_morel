@@ -4,8 +4,8 @@
     .filaGaleria{
         .prodUno{
             .galTamUno{
-                width: $imgGaleria-width-sm;
-                height: $imgGaleria-height-sm;
+                width: $imgGaleria-width;
+                height: $imgGaleria-height;
                 border-radius: 10px;
                 border-bottom: $imgGaleria-border;
                 border-right: $imgGaleria-border;
@@ -20,8 +20,8 @@
         .filaGaleria{
             .prodUno{
                 .galTamUno{
-                    gap: 30px;
-                    margin-bottom: 10px;
+                    gap: 20px;
+                    margin-bottom: 20px;
                 }
             }
         }

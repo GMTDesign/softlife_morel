@@ -337,7 +337,7 @@
     font-size: 18px;
   }
   .contenedor .filaCarousel .carouselMargin-xl {
-    margin-left: 400px;
+    margin-left: 405px;
   }
   .contenedor .filaCarousel .oferDes {
     font-size: 16px;
@@ -555,6 +555,10 @@
 }
 /*productos.html*/
 /*estilo de las cards*/
+.filaCard .card .card-img {
+  width: 100%;
+  height: 100%;
+}
 .filaCard .card .card-body .card-title {
   font-size: 14px;
 }
@@ -585,8 +589,8 @@
 /* estilo galería */
 /* defino tamaño de las imágenes*/
 .contenedorGaleria .filaGaleria .prodUno .galTamUno {
-  width: 90%;
-  height: 90%;
+  width: 95%;
+  height: 95%;
   border-radius: 10px;
   border-bottom: 5px solid rgb(180, 180, 178);
   border-right: 5px solid rgb(180, 180, 178);
@@ -596,8 +600,8 @@
 /* modificación para desktop*/
 @media screen and (min-width: 1200px) {
   .contenedorGaleria .filaGaleria .prodUno .galTamUno {
-    gap: 30px;
-    margin-bottom: 10px;
+    gap: 20px;
+    margin-bottom: 20px;
   }
 }
 /* estilo links de interés */
