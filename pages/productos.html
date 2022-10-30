@@ -9,10 +9,15 @@
   <!-- CSS only -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
   <link rel="stylesheet" href="../styles/styles.css">
+  <!-- JavaScript Bundle with Popper -->
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
   <!-- fuentes -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Open+Sans:ital@1&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+  <script src="../js/productos.js"></script>
+  <script defer src="../js/templates.js"></script>
+  <script defer src="../js/elijoProductos.js"></script>
   <!-- título de la ventana -->
   <title>Productos</title>
 </head>
@@ -32,17 +37,9 @@
             <li class="nav-item px-5" >
               <a class="btn btn-secondary" role="button" href="../pages/sobre-nosotros.html">Sobre Nosotros</a>
             </li>
-            <div class="dropdown px-5">
-              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Productos
-              </button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="../pages/productos.html#prodLiving">Juegos de Living</a></li>
-                <li><a class="dropdown-item" href="../pages/productos.html#prodComedor">Juegos de Comedor</a></li>
-                <li><a class="dropdown-item" href="../pages/productos.html#prodOficina">Muebles de Oficina</a></li>
-                <li><a class="dropdown-item" href="../pages/productos.html#prodAccesorio">Accesorios</a></li>    
-              </ul>
-            </div>
+            <li class="nav-item px-5" >
+              <a class="btn btn-secondary" role="button" href="../pages/productos.html">Productos</a>
+            </li>            
             <li class="nav-item px-5">
               <a class="btn btn-secondary" role="button" href="../pages/servicios.html">Servicios</a>
             </li>
@@ -59,336 +56,20 @@
     <!-- fin barra de navegación de bootstrap -->
   </header>
   <article>
+    <a class ="carrito" href="../pages/carrito.html">
+      <img class ="carritoImg" role="button" src="../imagenes/carrito.png">
+    </a> 
     <section class="titulos">
       <h1 class="tituloDos">SoftLife</h1>
       <h3 class="subtitulo">Productos</h3>
     </section>
     <section class="container-fluid">
-      <!--imágenes de livings-->
       <div class="row filaSubtitulo">
-        <h3 id="prodLiving">Amoblamientos de living</h3>
+        <h3 id="prodLiving"></h3>
       </div>
+      <!--imágenes de livings-->
       <div class="row filaCard">
-        <!--primera imagen-->
-        <article class="col-sm-12 col-xl-4 d-flex justify-content-center">
-          <div class="card" style="width: 18rem;">
-            <img class="card-img" src="../imagenes/productos/sofa_01.jpg" alt="Sofá gris">
-            <div class="card-body">
-              <h6 class="card-title">Sofá en color gris</h6>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Colores disponibles:</li>
-              <li class="list-group-item">Gris - Rojo - Crema</li>
-            </ul>
-          </div>
-        </article>
-        <!--segunda imagen-->
-        <article class="col-sm-12 col-xl-4 mt-3 d-flex justify-content-center">
-          <div class="card" style="width: 18rem;">
-            <img  class="card-img" src="../imagenes/productos/sofa_02.jpg" alt="Sofá gris">
-            <div class="card-body">
-              <h6 class="card-title">Sofá en color gris</h6>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Colores disponibles:</li>
-              <li class="list-group-item">Gris - Aguamarina - Maíz</li>
-            </ul>
-          </div>
-        </article>
-        <!--tercera imagen-->
-        <article class="col-sm-12 col-xl-4 mt-3 d-flex justify-content-center">
-          <div class="card" style="width: 18rem;">
-            <img  class="card-img" src="../imagenes/productos/sofa_03.jpg" alt="Sofá celeste">
-            <div class="card-body">
-              <h6 class="card-title">Sofá en color celeste</h6>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Colores disponibles:</li>
-              <li class="list-group-item">Celeste - Crema - Canela</li>
-            </ul>
-          </div>
-        </article>
-      </div>
-      <!--link para volver al menú-->
-      <div class="row mt-3 filaInicio">
-        <a href="#inicio" class="iniPagina">Volver</a>
-      </div>
-      <div class="row mt-sm-2 mt-xl-3 filaCard">
-        <!--cuarta imagen-->
-        <article class="col-sm-12 col-xl-4 mt-3 d-flex justify-content-center">
-          <div class="card" style="width: 18rem;">
-            <img  class="card-img" src="../imagenes/productos/living_01.jpg" alt="Juego de living color negro">
-            <div class="card-body">
-              <h6 class="card-title">Juego de living</h6>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Colores disponibles:</li>
-              <li class="list-group-item">Negro - Azul - Menta</li>
-            </ul>
-          </div>
-        </article>
-        <!--quinta imagen-->
-        <article class="col-sm-12 col-xl-4 mt-3 d-flex justify-content-center">
-          <div class="card" style="width: 18rem;">
-            <img  class="card-img" src="../imagenes/productos/living_02.jpg" alt="Juego de living color blanco">
-            <div class="card-body">
-              <h6 class="card-title">Juego de living</h6>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Colores disponibles:</li>
-              <li class="list-group-item">Blanco - Beige - Negro</li>
-            </ul>
-          </div>
-        </article>
-        <!--sexta imagen-->
-        <article class="col-sm-12 col-xl-4 mt-3 d-flex justify-content-center">
-          <div class="card" style="width: 18rem;">
-            <img  class="card-img" src="../imagenes/productos/living_03.jpg" alt="Juego de living color naranja">
-            <div class="card-body">
-              <h6 class="card-title">Juego de living</h6>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Colores disponibles:</li>
-              <li class="list-group-item">Naranja - Beige - Celeste</li>
-            </ul>
-          </div>
-        </article>
-      </div>
-      <div class="row mt-3 filaInicio">
-        <a href="#inicio" class="iniPagina">Volver</a>
-      </div>
-      <!--imágenes de comedores-->
-      <div class="row mt-sm-2 mt-xl-5 filaSubtitulo">
-        <h3 id="prodComedor">Amoblamientos para comedores</h3>
-      </div>
-      <div class="row filaCard">
-        <!--primera imagen-->
-        <article class="col-sm-12 col-xl-4 mt-3 d-flex justify-content-center">
-          <div class="card" style="width: 18rem;">
-            <img  class="card-img" src="../imagenes/productos/silla_01.jpg" alt="Silla color blanco">
-            <div class="card-body">
-              <h6 class="card-title">Silla moderna color blanco</h6>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Colores disponibles:</li>
-              <li class="list-group-item">Blanco - Negro - Verde manzana</li>
-            </ul>
-          </div>
-        </article>
-        <!--segunda imagen-->
-        <article class="col-sm-12 col-xl-4 mt-3 d-flex justify-content-center">
-          <div class="card" style="width: 18rem;">
-            <img  class="card-img" src="../imagenes/productos/silla_02.jpg" alt="Silla de cuero color negro">
-            <div class="card-body">
-              <h6 class="card-title">Silla de cuero color negro</h6>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Colores disponibles:</li>
-              <li class="list-group-item">Negro - Crema - Blanco</li>
-            </ul>
-          </div>
-        </article>
-        <!--tercera imagen-->
-        <article class="col-sm-12 col-xl-4 mt-3 d-flex justify-content-center">
-          <div class="card" style="width: 18rem;">
-            <img  class="card-img" src="../imagenes/productos/silla_03.jpg" alt="Silla de plástico blanco">
-            <div class="card-body">
-              <h6 class="card-title">Silla de plástico blanco</h6>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Colores disponibles:</li>
-              <li class="list-group-item">Blanco - Negro</li>
-            </ul>
-          </div>
-        </article>
-      </div>
-      <div class="row mt-3 filaInicio">
-        <a href="#inicio" class="iniPagina">Volver</a>
-      </div>
-      <div class="row mt-sm-2 mt-xl-3 filaCard">
-        <!--cuarta imagen-->
-        <article class="col-sm-12 col-xl-4 mt-3 d-flex justify-content-center">
-          <div class="card" style="width: 18rem;">
-            <img  class="card-img" src="../imagenes/productos/comedor_01.jpg" alt="Juego de comedor, sillas color negro">
-            <div class="card-body">
-              <h6 class="card-title">Juego de comedor</h6>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Mesa de madera marrón</li>
-              <li class="list-group-item">Sillas metálicas negras</li>
-            </ul>
-          </div>
-        </article>
-        <!--quinta imagen-->
-        <article class="col-sm-12 col-xl-4 mt-3 d-flex justify-content-center">
-          <div class="card" style="width: 18rem;">
-            <img  class="card-img" src="../imagenes/productos/comedor_02.jpg" alt="Juego de comedor en color blanco">
-            <div class="card-body">
-              <h6 class="card-title">Juego de comedor</h6>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Mesa de madera blanca</li>
-              <li class="list-group-item">Sillas de plástico blancas</li>
-            </ul>
-          </div>
-        </article>
-        <!--sexta imagen-->
-        <article class="col-sm-12 col-xl-4 mt-3 d-flex justify-content-center">
-          <div class="card" style="width: 18rem;">
-            <img  class="card-img" src="../imagenes/productos/comedor_03.jpg" alt="Juego de comedor en color negro">
-            <div class="card-body">
-              <h6 class="card-title">Juego de comedor</h6>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Mesa rectangular negra</li>
-              <li class="list-group-item">Sillas modernas en color negro</li>
-            </ul>
-          </div>
-        </article>
-      </div>
-      <div class="row mt-5 filaInicio">
-        <a href="#inicio" class="iniPagina">Volver</a>
-      </div>
-      <!--imágenes de muebles de oficina-->
-      <div class="row mt-sm-3 mt-xl-5 filaSubtitulo">
-        <h3 id="prodOficina">Amoblamientos para oficinas</h3>
-      </div>
-      <div class="row filaCard">
-        <!--primera imagen-->
-        <article class="col-sm-12 col-xl-4 mt-3 d-flex justify-content-center">
-          <div class="card" style="width: 18rem;">
-            <img  class="card-img" src="../imagenes/productos/escritorio_01.jpg" alt="Silla para PC">
-            <div class="card-body">
-              <h6 class="card-title">Silla para PC</h6>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Colores disponibles:</li>
-              <li class="list-group-item">Blanco - Negro</li>
-            </ul>
-          </div>
-        </article>
-        <!--segunda imagen-->
-        <article class="col-sm-12 col-xl-4 mt-3 d-flex justify-content-center">
-          <div class="card" style="width: 18rem;">
-            <img  class="card-img" src="../imagenes/productos/recepcion_01.jpg" alt="Sofás para recepción">
-            <div class="card-body">
-              <h6 class="card-title">Sofás acolchados para recepción</h6>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Colores disponibles:</li>
-              <li class="list-group-item">Rosa pálido - Beige - Negro</li>
-            </ul>
-          </div>
-        </article>
-        <!--tercera imagen-->
-        <article class="col-sm-12 col-xl-4 mt-3 d-flex justify-content-center">
-          <div class="card" style="width: 18rem;">
-            <img  class="card-img" src="../imagenes/productos/escritorio_02.jpg" alt="Escritorio con cajonera">
-            <div class="card-body">
-              <h6 class="card-title">Escritorio de madera con cajonera</h6>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Colores disponibles:</li>
-              <li class="list-group-item">Marrón/Blanco - Marrón/Negro</li>
-            </ul>
-          </div>
-        </article>
-      </div>
-      <div class="row mt-5 filaInicio">
-        <a href="#inicio" class="iniPagina">Volver</a>
-      </div>
-      <div class="row mt-sm-2 mt-xl-3 filaCard">
-        <!--cuarta imagen-->
-        <article class="col-sm-12 col-xl-4 mt-3 d-flex justify-content-center">
-          <div class="card" style="width: 18rem;">
-            <img  class="card-img" src="../imagenes/productos/escritorio_03.jpg" alt="Escritorio con cajonera">
-            <div class="card-body">
-              <h6 class="card-title">Escritorio de madera con cajonera</h6>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Colores disponibles:</li>
-              <li class="list-group-item">Marrón - Negro</li>
-            </ul>
-          </div>
-        </article>
-        <!--quinta imagen-->
-        <article class="col-sm-12 col-xl-4 mt-3 d-flex justify-content-center">
-          <div class="card" style="width: 18rem;">
-            <img  class="card-img" src="../imagenes/productos/estanteria_01.jpg" alt="Estantería de madera color marrón">
-            <div class="card-body">
-              <h6 class="card-title">Estantería de madera</h6>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Colores disponibles:</li>
-              <li class="list-group-item">Marrón - Blanco</li>
-            </ul>
-          </div>
-        </article>
-        <!--sexta imagen-->
-        <article class="col-sm-12 col-xl-4 mt-3 d-flex justify-content-center">
-          <div class="card" style="width: 18rem;">
-            <img  class="card-img" src="../imagenes/productos/estanteria_02.jpg" alt="Estantería de madera color negro">
-            <div class="card-body">
-              <h6 class="card-title">Estantería de madera</h6>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Colores disponibles:</li>
-              <li class="list-group-item">Negro - Marrón</li>
-            </ul>
-          </div>
-        </article>
-      </div>
-      <div class="row mt-5 filaInicio">
-        <a href="#inicio" class="iniPagina">Volver</a>
-      </div>
-      <!--imágenes de accesorios-->
-      <div class="row mt-sm-3 mt-xl-5 filaSubtitulo">
-        <h3 id="prodAccesorio">Accesorios</h3>
-      </div>
-      <div class="row mb-5 filaCard">
-        <!--primera imagen-->
-        <article class="col-sm-12 col-xl-4 mt-3 d-flex justify-content-center">
-          <div class="card" style="width: 18rem;">
-            <img  class="card-img" src="../imagenes/productos/lampara_01.jpg" alt="Lámpara regulable">
-            <div class="card-body">
-              <h6 class="card-title">Lámpara regulable</h6>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Colores disponibles:</li>
-              <li class="list-group-item">Blanco - Negro (pie plateado)</li>
-            </ul>
-          </div>
-        </article>
-        <!--segunda imagen-->
-        <article class="col-sm-12 col-xl-4 mt-3 d-flex justify-content-center">
-          <div class="card" style="width: 18rem;">
-            <img  class="card-img" src="../imagenes/productos/lampara_02.jpg" alt="Lámpara regulable">
-            <div class="card-body">
-              <h6 class="card-title">Lámpara regulable</h6>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Colores disponibles:</li>
-              <li class="list-group-item">Negro - Blanco (pie de madera)</li>
-            </ul>
-          </div>
-        </article>
-        <!--tercera imagen-->
-        <article class="col-sm-12 col-xl-4 mt-3 d-flex justify-content-center">
-          <div class="card" style="width: 18rem;">
-            <img  class="card-img" src="../imagenes/productos/iluminacion_01.jpg" alt="Lámparas colgantes">
-            <div class="card-body">
-              <h6 class="card-title">Lámparas colgantes</h6>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Colores disponibles:</li>
-              <li class="list-group-item">Blanco - Negro</li>
-            </ul>
-          </div>
-        </article>
-      </div>
-      <div class="row mt-5 filaInicio">
-        <a href="#inicio" class="iniPagina">Volver</a>
-      </div>
+      </div>  
     </section>
     <section class="datos">
       <img class="tamIco" src="../imagenes/email.png">
@@ -414,7 +95,5 @@
       </div>
     </section>
   </footer> 
-  <!-- JavaScript Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>

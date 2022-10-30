@@ -1,4 +1,5 @@
 /*productos.html*/
+
 /*estilo de las cards*/
 .filaCard{
     .card{
@@ -8,22 +9,27 @@
         }
         .card-body{
             .card-title{
-                font-size: $size-textoDos;
+                font-size: $size-textoUno;
+            }
+            .colorProd{
+                font-size: $size-textoUno;
             }
         }  
         .list-group{
             .list-group-item{
                 font-size: $size-textoUno;
             }
+        }
+        .btnAgrega{
+            display: flex;
+            justify-content: space-around;
+            .agregar{
+                @include btnColor($boton-color: rgb(35, 15, 48), $boton-bg-color: #f8c49f);
+                font-size: $size-textoUno;
+                padding: 02px;
+                width: 100px;
+            }
         }  
-    }
-}
-/*link para ir al inicio de la página*/
-.filaInicio{
-    .iniPagina{
-        font-size: $size-textoUno;
-        display:flex;
-        justify-content: center;
     }
 }
 /* modificación para desktop*/
@@ -32,20 +38,21 @@
         .card{
             .card-body{
                 .card-title{
-                    font-size: $size-textoCuatro;
+                    font-size: $size-textoDos;
                 }
+                .colorProd{
+                    font-size: $size-textoDos;
+                }                
             }  
             .list-group{
                 .list-group-item{
-                    font-size: $size-textoTres;
+                    font-size: $size-textoUno;
                 }
+            }
+            .btn{
+                @include btnColor($boton-color: rgb(35, 15, 48), $boton-bg-color: #f8c49f);
+                padding: 02px;
             }  
-        }
-    }
-    /*link para ir al inicio de la página*/
-    .filaInicio{
-        .iniPagina{
-            font-size: $size-textoTres;
         }
     }
 }

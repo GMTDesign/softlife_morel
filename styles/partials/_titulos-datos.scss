@@ -14,16 +14,6 @@
         margin-left: 50px;
     }
 }
-// productos.html: subtítulos por tipo de producto
-.filaSubtitulo{
-    #prodLiving, #prodComedor, #prodOficina, #prodAccesorio{
-        font-size: $size-textoDos;
-        color: $font-subtitulo-color;
-        font-style: italic;
-        text-align: center;
-        padding: 10px;
-    }
-}
 // datos de contacto: en todas las páginas
 .datos{
     display:flex;
@@ -57,11 +47,6 @@
             margin-left: 150px;
         }
     }
-    .filaSubtitulo{
-        #prodLiving, #prodComedor, #prodOficina, #prodAccesorio{
-            font-size: $size-textoCuatro;
-        }
-    }    
     .datos{
         display:flex;
         flex-direction: row;
