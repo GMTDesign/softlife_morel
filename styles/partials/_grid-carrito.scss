@@ -1,47 +1,151 @@
-.recordatorio{
-    font-size: 16px;
-    text-align: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
+.gridCarrito{
+    display: grid;
+    grid-template-areas: 
+    "compraImg compraImg compraImg"
+    "compraCod compraDescri compraColor"
+    "compraPrecio compraCanti compraPrecioF"
+    "compraBaja compraBaja compraBaja";
+    grid-template-rows: repeat(3, 100px) 40px;
+    grid-template-columns: 150 px repeat(2, 100px);
+    width: 350px;
+    justify-content: center;
+    font-size: $size-textoDos;
+    color: $font-secondary-color;
+    background-color: rgb(238, 238, 218);
+    border-radius: 10px;
+    border-bottom: 02px solid rgb(231, 209, 162);
+    margin-left: 20px;
+    margin-bottom: 15px;
 }
-.titulosTabla{
-    display: flex;
-    flex-direction: row;
-    /*justify-content:space-around;*/
-    margin-left: 380px;
-    .titu1{
-        width: 100px;
-    }
-    .titu2{
-        width: 180px;
-    }
-    .titu3{
-        width: 150px;
-    }
-    .titu4{
-        width: 180px;
-    }
-    .titu5{
-        width: 200px;
-    }
-}
-.filaProducto{
-    margin-top: 20px;
-    font-size: 14px;
+.compraImg{
+    grid-area: compraImg;
     .prodImgTam{
-        display: flex;
-        justify-content: center;
         width: 50px;
         height: 50px;
-        margin-left: 180px;
     }
+}
+.compraCod{
+    grid-area: compraCod;
+}
+.compraDescri{
+    grid-area: compraDescri;
+}
+.compraColor{
+    grid-area: compraColor;
+}
+.compraPrecio{
+    grid-area: compraPrecio;
+}
+.compraCanti{
+    grid-area: compraCanti;
+}
+.compraPrecioF{
+    grid-area: compraPrecioF;
+}
+.compraImg, .compraCod, .compraDescri, .compraColor, .compraPrecio, .compraCanti, .compraPrecioF{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: $size-textoDos;
+    margin-top: 10px;
+    border-bottom: 01px solid rgb(154, 205, 50);
+}
+.tituloCod, .tituloDescri, .tituloColor, .tituloPrecio, .tituloCanti, .tituloPrecioF{
+    font-size: $size-textoDos;
+}
+.compraBaja{
+    grid-area: compraBaja;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 05px;
+    .btnBaja{
+        @include btnColor($boton-color: rgb(35, 15, 48), $boton-bg-color: #f8c49f);
+        font-size: $size-textoDos;
+        padding: 03px;
+    }
+}
+.financiacion{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: $size-textoDos;
+    margin-top: 20px;
 }
 .compro{
     display: flex;
-    justify-content:center;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;
+    .btnCompro{
+        @include btnColor($boton-color: rgb(35, 15, 48), $boton-bg-color: #f8c49f);
+        font-size: $size-textoDos;
+        padding: 10px;
+    }
+}
+.pago{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 05px;
+}
+.infoPago{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+}
+.tipoPago, .infoPago{
+    color: $font-secondary-color;
+    font-size: $size-textoDos;
 }
 .totalCompra{
-    color: darkgreen;
+    color: rgb(35, 151, 25);
     font-weight: bold;
-    margin-left: 600px;
+    margin-left: 60px;
+}
+/* modificación para desktop*/
+@media screen and (min-width: 1200px) {
+    .gridCarrito{
+        display: grid;
+        grid-template-areas: 
+        "compraImg compraCod compraDescri compraColor compraPrecio compraCanti compraPrecioF"
+        "compraBaja compraBaja compraBaja compraBaja compraBaja compraBaja compraBaja";
+        grid-template-rows: 100px 45px;
+        grid-template-columns: repeat(4, 100px) 150px repeat(2, 100px);
+        width: 850px;
+        justify-content: center;
+        margin-left: 150px;
+        margin-bottom: 15px;
+    }
+    .compraImg, .compraCod, .compraDescri, .compraColor, .compraPrecio, .compraCanti, .compraPrecioF{
+        font-size: $size-textoCuatro;
+    } 
+    .tituloCod, .tituloDescri, .tituloColor, .tituloPrecio, .tituloCanti, .tituloPrecioF{
+        font-size: $size-textoCuatro;
+    }    
+    .compraBaja{
+        .btnBaja{
+            font-size: $size-textoTres;
+            padding: 05px;
+        }
+    }
+    .financiacion{
+        font-size: $size-textoCuatro;
+    }
+    .compro{
+        .btnCompro{
+            font-size: $size-textoTres;
+        }
+    }    
+    .pago{
+        font-size: $size-textoCuatro;
+        gap: 20px;
+    }
+    .tipoPago, .infoPago{
+        font-size: $size-textoCuatro;
+    }
+    .totalCompra{
+        margin-left: 600px;
+    }
 }

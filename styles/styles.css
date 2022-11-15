@@ -138,6 +138,11 @@
   color: rgb(11, 91, 95);
   margin-left: 50px;
 }
+.titulos .detalles {
+  font-size: 12px;
+  color: rgb(11, 91, 95);
+  margin-left: 50px;
+}
 
 .datos {
   display: flex;
@@ -170,6 +175,10 @@
     font-size: 16px;
     margin-left: 150px;
   }
+  .titulos .detalles {
+    font-size: 18px;
+    margin-left: 100px;
+  }
   .datos {
     display: flex;
     flex-direction: row;
@@ -199,16 +208,6 @@
 .navbar .btn:hover {
   color: #5556a5;
   background-color: rgb(255, 235, 205);
-}
-
-.carrito {
-  display: flex;
-  justify-content: right;
-  margin-right: 50px;
-}
-.carrito .carritoImg {
-  width: 65px;
-  height: 65px;
 }
 
 /* modificación para desktop*/
@@ -518,7 +517,7 @@
     grid-template-areas: "forNombre forNombre forNombre" "forProvincia ciudad domicilio" "ubicacion cliente cliente" "inquietud inquietud inquietud" "botones botones botones";
     grid-template-columns: 250px 250px 300px;
     grid-template-rows: repeat(3, 50px) 170px 50px;
-    margin-left: 150px;
+    margin-left: 180px;
     margin-bottom: 150px;
     padding: 25px;
     width: 850px;
@@ -534,20 +533,56 @@
     margin-left: 550px;
   }
 }
-/*productos.html*/
-/*estilo de las cards*/
+.carrito {
+  display: flex;
+  justify-content: right;
+  margin-right: 50px;
+}
+.carrito .carritoImg {
+  width: 65px;
+  height: 65px;
+}
+
+.categorias {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+.categorias .opciones {
+  color: rgb(35, 15, 48);
+  background-color: #f8c49f;
+  padding: 2px;
+  font-size: 10px;
+}
+.categorias .opciones:hover {
+  color: #5556a5;
+  background-color: rgb(255, 235, 205);
+}
+.categorias .opciones .opcion {
+  background-color: rgb(255, 235, 205);
+}
+
+/*productos.html - estilo de las cards*/
 .filaCard .card .card-img {
   width: 100%;
   height: 100%;
 }
-.filaCard .card .card-body .card-title {
-  font-size: 10px;
+.filaCard .card .card-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
-.filaCard .card .card-body .colorProd {
-  font-size: 10px;
+.filaCard .card .card-body .card-title {
+  font-size: 12px;
+}
+.filaCard .card .list-group {
+  background-color: rgb(243, 243, 226);
 }
 .filaCard .card .list-group .list-group-item {
   font-size: 10px;
+  background-color: rgb(243, 243, 226);
+  margin-left: 20px;
 }
 .filaCard .card .btnAgrega {
   display: flex;
@@ -556,26 +591,40 @@
 .filaCard .card .btnAgrega .agregar {
   color: rgb(35, 15, 48);
   background-color: #f8c49f;
-  font-size: 10px;
+  font-size: 12px;
   padding: 2px;
-  width: 100px;
+  margin: 5px;
+  width: 150px;
+}
+
+.card-error {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: rgb(255, 0, 0);
+}
+.card-error .errorImg {
+  width: 40%;
+  height: 40%;
 }
 
 /* modificación para desktop*/
 @media screen and (min-width: 1200px) {
-  .filaCard .card .card-body .card-title {
-    font-size: 12px;
+  .categorias .opciones {
+    padding: 5px;
+    font-size: 14px;
   }
-  .filaCard .card .card-body .colorProd {
-    font-size: 12px;
+  .filaCard .card .card-body .card-title {
+    font-size: 16px;
   }
   .filaCard .card .list-group .list-group-item {
-    font-size: 10px;
+    font-size: 12px;
   }
-  .filaCard .card .btn {
-    color: rgb(35, 15, 48);
-    background-color: #f8c49f;
-    padding: 2px;
+  .filaCard .card .btnAgrega .agregar {
+    font-size: 14px;
+    padding: 3px;
+    margin: 10px;
+    width: 200px;
   }
 }
 /* estilo galería */
@@ -648,54 +697,163 @@
     height: 20vh;
   }
 }
-.recordatorio {
-  font-size: 16px;
-  text-align: center;
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-
-.titulosTabla {
-  display: flex;
-  flex-direction: row;
-  /*justify-content:space-around;*/
-  margin-left: 380px;
-}
-.titulosTabla .titu1 {
-  width: 100px;
-}
-.titulosTabla .titu2 {
-  width: 180px;
-}
-.titulosTabla .titu3 {
-  width: 150px;
-}
-.titulosTabla .titu4 {
-  width: 180px;
-}
-.titulosTabla .titu5 {
-  width: 200px;
-}
-
-.filaProducto {
-  margin-top: 20px;
-  font-size: 14px;
-}
-.filaProducto .prodImgTam {
-  display: flex;
+.gridCarrito {
+  display: grid;
+  grid-template-areas: "compraImg compraImg compraImg" "compraCod compraDescri compraColor" "compraPrecio compraCanti compraPrecioF" "compraBaja compraBaja compraBaja";
+  grid-template-rows: repeat(3, 100px) 40px;
+  grid-template-columns: 150 px repeat(2, 100px);
+  width: 350px;
   justify-content: center;
+  font-size: 12px;
+  color: rgb(56, 37, 95);
+  background-color: rgb(238, 238, 218);
+  border-radius: 10px;
+  border-bottom: 2px solid rgb(231, 209, 162);
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+
+.compraImg {
+  grid-area: compraImg;
+}
+.compraImg .prodImgTam {
   width: 50px;
   height: 50px;
-  margin-left: 180px;
+}
+
+.compraCod {
+  grid-area: compraCod;
+}
+
+.compraDescri {
+  grid-area: compraDescri;
+}
+
+.compraColor {
+  grid-area: compraColor;
+}
+
+.compraPrecio {
+  grid-area: compraPrecio;
+}
+
+.compraCanti {
+  grid-area: compraCanti;
+}
+
+.compraPrecioF {
+  grid-area: compraPrecioF;
+}
+
+.compraImg, .compraCod, .compraDescri, .compraColor, .compraPrecio, .compraCanti, .compraPrecioF {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 12px;
+  margin-top: 10px;
+  border-bottom: 1px solid rgb(154, 205, 50);
+}
+
+.tituloCod, .tituloDescri, .tituloColor, .tituloPrecio, .tituloCanti, .tituloPrecioF {
+  font-size: 12px;
+}
+
+.compraBaja {
+  grid-area: compraBaja;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin: 5px;
+}
+.compraBaja .btnBaja {
+  color: rgb(35, 15, 48);
+  background-color: #f8c49f;
+  font-size: 12px;
+  padding: 3px;
+}
+
+.financiacion {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 12px;
+  margin-top: 20px;
 }
 
 .compro {
   display: flex;
+  flex-direction: row;
   justify-content: center;
+  margin-top: 10px;
+}
+.compro .btnCompro {
+  color: rgb(35, 15, 48);
+  background-color: #f8c49f;
+  font-size: 12px;
+  padding: 10px;
+}
+
+.pago {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 5px;
+}
+
+.infoPago {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.tipoPago, .infoPago {
+  color: rgb(56, 37, 95);
+  font-size: 12px;
 }
 
 .totalCompra {
-  color: darkgreen;
+  color: rgb(35, 151, 25);
   font-weight: bold;
-  margin-left: 600px;
+  margin-left: 60px;
+}
+
+/* modificación para desktop*/
+@media screen and (min-width: 1200px) {
+  .gridCarrito {
+    display: grid;
+    grid-template-areas: "compraImg compraCod compraDescri compraColor compraPrecio compraCanti compraPrecioF" "compraBaja compraBaja compraBaja compraBaja compraBaja compraBaja compraBaja";
+    grid-template-rows: 100px 45px;
+    grid-template-columns: repeat(4, 100px) 150px repeat(2, 100px);
+    width: 850px;
+    justify-content: center;
+    margin-left: 150px;
+    margin-bottom: 15px;
+  }
+  .compraImg, .compraCod, .compraDescri, .compraColor, .compraPrecio, .compraCanti, .compraPrecioF {
+    font-size: 16px;
+  }
+  .tituloCod, .tituloDescri, .tituloColor, .tituloPrecio, .tituloCanti, .tituloPrecioF {
+    font-size: 16px;
+  }
+  .compraBaja .btnBaja {
+    font-size: 14px;
+    padding: 5px;
+  }
+  .financiacion {
+    font-size: 16px;
+  }
+  .compro .btnCompro {
+    font-size: 14px;
+  }
+  .pago {
+    font-size: 16px;
+    gap: 20px;
+  }
+  .tipoPago, .infoPago {
+    font-size: 16px;
+  }
+  .totalCompra {
+    margin-left: 600px;
+  }
 }/*# sourceMappingURL=styles.css.map */

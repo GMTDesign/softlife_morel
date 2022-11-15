@@ -13,6 +13,11 @@
         color: $font-subtitulo-color;
         margin-left: 50px;
     }
+    .detalles{
+        font-size: $size-textoDos;
+        color: $font-subtitulo-color;
+        margin-left: 50px;
+    }
 }
 // datos de contacto: en todas las páginas
 .datos{
@@ -45,6 +50,10 @@
         .agradece{
             font-size: $size-textoCuatro;
             margin-left: 150px;
+        }
+        .detalles{
+            font-size: $size-titulo-sm;
+            margin-left: 100px;
         }
     }
     .datos{

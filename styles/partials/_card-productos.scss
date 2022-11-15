@@ -1,6 +1,33 @@
-/*productos.html*/
-
-/*estilo de las cards*/
+//estilo de la imagen del carrito
+.carrito{
+    display: flex;
+    justify-content: right;
+    margin-right: 50px;
+    .carritoImg{
+        width: 65px;
+        height: 65px;
+    }
+}
+//estilo del menú desplegable
+.categorias{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 10px;
+    .opciones{
+        @include btnColor($boton-color: rgb(35, 15, 48), $boton-bg-color: #f8c49f);
+        padding: 02px;
+        font-size: $size-textoUno;
+        &:hover{
+            color: $botonHover-color;
+            background-color: $botonHover-bgColor;
+        }
+        .opcion{
+            background-color: $botonHover-bgColor;
+        }    
+    }
+}
+/*productos.html - estilo de las cards*/
 .filaCard{
     .card{
         .card-img{
@@ -8,16 +35,19 @@
             height: 100%;
         }
         .card-body{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
             .card-title{
-                font-size: $size-textoUno;
+                font-size: $size-textoDos;
             }
-            .colorProd{
-                font-size: $size-textoUno;
-            }
-        }  
+        }        
         .list-group{
+            background-color: $grid-bg-color;
             .list-group-item{
                 font-size: $size-textoUno;
+                background-color: $grid-bg-color;
+                margin-left: 20px;
             }
         }
         .btnAgrega{
@@ -25,34 +55,52 @@
             justify-content: space-around;
             .agregar{
                 @include btnColor($boton-color: rgb(35, 15, 48), $boton-bg-color: #f8c49f);
-                font-size: $size-textoUno;
+                font-size: $size-textoDos;
                 padding: 02px;
-                width: 100px;
+                margin: 05px;
+                width: 150px;
             }
         }  
     }
 }
+.card-error{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: rgb(255, 0, 0);
+    .errorImg{
+        width: 40%;
+        height: 40%;
+    }
+}
 /* modificación para desktop*/
 @media screen and (min-width: 1200px) {
+    .categorias{
+        .opciones{
+            padding: 05px;
+            font-size: $size-textoTres;
+            }
+    }    
     .filaCard{
         .card{
             .card-body{
                 .card-title{
-                    font-size: $size-textoDos;
+                    font-size: $size-textoCuatro;
                 }
-                .colorProd{
-                    font-size: $size-textoDos;
-                }                
             }  
             .list-group{
                 .list-group-item{
-                    font-size: $size-textoUno;
+                    font-size: $size-textoDos;
                 }
             }
-            .btn{
-                @include btnColor($boton-color: rgb(35, 15, 48), $boton-bg-color: #f8c49f);
-                padding: 02px;
-            }  
+            .btnAgrega{
+                .agregar{
+                    font-size: $size-textoTres;
+                    padding: 03px;
+                    margin: 10px;
+                    width: 200px;
+                }
+            }
         }
     }
 }

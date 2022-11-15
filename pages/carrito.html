@@ -1,30 +1,31 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Muebles para el hogar (comedores, livings) y para empresas (oficinas, directorios)">
-    <meta name="keywords"
-        content="SANTA FE, MUEBLES, HOGAR, EMPRESAS, COMEDOR, LIVING, ACCESORIOS, OFICINA, DIRECTORIO, RECEPCION">
-    <!-- CSS only -->
+    <meta name="description" content="Carrito de compras muebles">
+    <meta name="keywords" content="SANTA FE, MUEBLES, COMPRA, CARRITO">
+    <!-- CSS only Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <!-- JavaScript Bundle with Popper -->
-    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../styles/styles.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
     <!-- fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Open+Sans:ital@1&family=Quicksand:wght@300&display=swap"
         rel="stylesheet">
+    <!-- link sweetalert2 -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- archivo con estilos -->
+    <link rel="stylesheet" href="../styles/styles.css">
     <script defer src="../js/templates.js"></script>
     <script defer src="../js/concretoCompra.js"></script>
     <!-- título de la ventana -->
-    <title>Productos</title>
+    <title>Carrito</title>
 </head>
 <body class="contenido">
     <header>
@@ -67,20 +68,17 @@
         <section class="titulos">
             <h1 class="tituloDos">SoftLife</h1>
             <h3 class="subtitulo">Concretar compra</h3>
+            <p class="detalles">Detalles del producto</p>
         </section>
-        <section class="titulosTabla">
-            <h6 class="titu1">Imagen</h6>
-            <h6 class="titu2">Descripción</h6>
-            <h6 class="titu4">Color</h6>
-            <h6 class="titu3">Precio Unitario</h6>
-        </section> 
-        <!-- productos seleccionados -->
-        <section class="container-fluid contenedorProductos">
+        <section class="container-fluid contenedorCarrito">
+            <!-- carga dinámica del carrito -->
         </section>
+        <section class="container-fluid financiacion">
+            <!-- carga dinámica financiación -->
         </section>
         <section class="compro">
-            <a class="btn btn-secondary btnCompro">Comprar</a>
-        </section>
+            <a class="btn btn-secondary btnCompro">Compro</a>
+        </section> 
         <section class="datos">
             <img class="tamIco" src="../imagenes/email.png">
             <p>E-mail: softlife@gmail.com</p>
@@ -105,9 +103,5 @@
             </div>
         </section>
     </footer>
-    <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-        crossorigin="anonymous"></script>
 </body>
 </html>

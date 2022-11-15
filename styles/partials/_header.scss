@@ -15,15 +15,6 @@
         }
     }
 }
-.carrito{
-    display: flex;
-    justify-content: right;
-    margin-right: 50px;
-    .carritoImg{
-        width: 65px;
-        height: 65px;
-    }
-}
 /* modificación para desktop*/
 @media screen and (min-width: 1200px) {
     /* responsive para desktop */
