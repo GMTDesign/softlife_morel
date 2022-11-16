@@ -71,7 +71,7 @@ const cargarProductos = () =>{
                             <section class="pago">
                             <p>Financiación</p>
                             <select class="cuotas">
-                                <option value="0">.</option>                            
+                                <option value="0">.</option>
                                 <option value="1">1</option>
                                 <option value="3">3</option>
                                 <option value="6">6</option>
@@ -88,23 +88,26 @@ const botonesEliminar = () =>{
         carrito.splice(indiceProducto,1)
         localStorage.setItem("carrito", JSON.stringify(carrito))
         cargarProductos()
+        formaPago()
         botonesEliminar()
     }))
 }
 botonesEliminar()
-
 //calculo el pago en cuotas según lo que seleccione el cliente
 const formaPago = () =>{
     const pago = document.querySelector("select.cuotas")
-    pago.addEventListener("change", ()=>{
+    let pagoFinal = (carrito.reduce((acc, producto)=> acc + producto.subtotal, 0)).toFixed(2)
+    let cuotas = 1
+    pago.addEventListener("change", ()=> {
         if (pago.value !== "0"){
             let cuotas = parseInt(pago.value)
             let pagoFinal = parseFloat(carrito.reduce((acc, producto)=> acc + producto.subtotal / cuotas, 0)).toFixed(2)
             const carritoInfo2 = document.querySelector("section.financiacion")
             carritoInfo2.innerHTML =  `<p">Pago en ${cuotas} cuotas: $ ${pagoFinal}</p>`
-            formaPago()
         }
     })
+    const carritoInfo2 = document.querySelector("section.financiacion")
+    carritoInfo2.innerHTML =  `<p">Pago ${cuotas} cuota/s: $ ${pagoFinal}</p>`
 }
 formaPago()
 /* si no existen productos en el carrito envío mensaje tipo "warning"
@@ -116,22 +119,23 @@ const finalizoCompra = () =>{
             mensaje = "El carrito está vacío!"
             iconoMsg = "warning"
             mensajeCarrito(mensaje, iconoMsg)
-    
         }else{
+            localStorage.removeItem("carrito")
+            const carritoInfo = document.querySelector("section.contenedorCarrito")
+            carritoInfo.innerHTML=""
+            const carritoInfo2 = document.querySelector("section.financiacion")
+            carritoInfo2.innerHTML =  `<p"></p>`
             Swal.fire({
                 position: 'center',
                 toast: true,
                 icon: "success",
                 title: "Gracias por confiar en nosotros!",
                 showConfirmButton: false,
-                timer: 3000
+                timer: 20000
             })
-            localStorage.removeItem("carrito")
-            const carritoInfo = document.querySelector("section.contenedorCarrito")
-            carritoInfo.innerHTML=""
-            const carritoInfo2 = document.querySelector("section.financiacion")
-            carritoInfo2.innerHTML =  `<p"></p>`
+            
         }
+        location.href ="../pages/productos.html"
     })        
 }
 finalizoCompra()

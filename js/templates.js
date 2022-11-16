@@ -31,7 +31,7 @@ const armarCard = ({idProducto, imagen, titulo, color1, color2, precio}) => {
             </div>
           </article>`
 }
-
+//mensaje de error por falla con la base de datos
 const mensageError = () => {
   return `<article class="col-sm-12 col-xl-4 mb-3 container-fluid">
             <div class="card card-error" style="width: 18 rem;">
